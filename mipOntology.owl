@@ -1,12 +1,40 @@
 <?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
 <rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
      xml:base="http://www.w3.org/2002/07/owl"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
-     xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
-    <Ontology/>
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <Ontology rdf:about="http://humanbrainproject/mip"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://humanbrainproject/mip#comesFrom -->
+
+    <DatatypeProperty rdf:about="http://humanbrainproject/mip#comesFrom">
+        <rdfs:comment>This Data Property is used to define the origin (possibly hospital or research center) where a variable comes from</rdfs:comment>
+    </DatatypeProperty>
     
 
 
@@ -18,1793 +46,1593 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-
     
 
 
-    <!-- adnicategory -->
+    <!-- http://www.w3.org/2002/07/3rdventricle -->
 
-
-    <Class rdf:about="adnicategory">
-        <rdfs:subClassOf rdf:resource="diagnosis"/>
+    <Class rdf:about="http://www.w3.org/2002/07/3rdventricle">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/csf"/>
     </Class>
     
-
 
-    <!-- agegroup -->
 
+    <!-- http://www.w3.org/2002/07/4thventricle -->
 
-    <Class rdf:about="agegroup">
-        <rdfs:subClassOf rdf:resource="demographics"/>
+    <Class rdf:about="http://www.w3.org/2002/07/4thventricle">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/csf"/>
     </Class>
     
 
 
-    <!-- alzheimerbroadcategory -->
+    <!-- http://www.w3.org/2002/07/adnicategory -->
 
-
-    <Class rdf:about="alzheimerbroadcategory">
-        <rdfs:subClassOf rdf:resource="diagnosis"/>
+    <Class rdf:about="http://www.w3.org/2002/07/adnicategory">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/diagnosis"/>
     </Class>
     
 
 
-    <!-- amygdala -->
+    <!-- http://www.w3.org/2002/07/agegroup -->
 
-
-    <Class rdf:about="amygdala">
-        <rdfs:subClassOf rdf:resource="cerebral_nuclei"/>
+    <Class rdf:about="http://www.w3.org/2002/07/agegroup">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/demographics"/>
     </Class>
     
-
 
-    <!-- apoe4 -->
 
+    <!-- http://www.w3.org/2002/07/alzheimerbroadcategory -->
 
-    <Class rdf:about="apoe4">
-        <rdfs:subClassOf rdf:resource="polymorphism"/>
+    <Class rdf:about="http://www.w3.org/2002/07/alzheimerbroadcategory">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/diagnosis"/>
     </Class>
     
 
 
-    <!-- av45 -->
+    <!-- http://www.w3.org/2002/07/amygdala -->
 
-
-    <Class rdf:about="av45">
-        <rdfs:subClassOf rdf:resource="pet"/>
+    <Class rdf:about="http://www.w3.org/2002/07/amygdala">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/cerebral_nuclei"/>
     </Class>
     
 
 
-    <!-- basal_ganglia -->
+    <!-- http://www.w3.org/2002/07/apoe4 -->
 
-
-    <Class rdf:about="basal_ganglia">
-        <rdfs:subClassOf rdf:resource="cerebral_nuclei"/>
+    <Class rdf:about="http://www.w3.org/2002/07/apoe4">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/polymorphism"/>
     </Class>
     
-
 
-    <!-- brain -->
 
+    <!-- http://www.w3.org/2002/07/av45 -->
 
-    <Class rdf:about="brain">
-        <rdfs:subClassOf rdf:resource="root"/>
+    <Class rdf:about="http://www.w3.org/2002/07/av45">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/pet"/>
     </Class>
     
 
 
-    <!-- brain_anatomy -->
+    <!-- http://www.w3.org/2002/07/basal_ganglia -->
 
-
-    <Class rdf:about="brain_anatomy">
-        <rdfs:subClassOf rdf:resource="brain"/>
+    <Class rdf:about="http://www.w3.org/2002/07/basal_ganglia">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/cerebral_nuclei"/>
     </Class>
     
 
 
-    <!-- brain_metabolism -->
+    <!-- http://www.w3.org/2002/07/brain -->
 
-
-    <Class rdf:about="brain_metabolism">
-        <rdfs:subClassOf rdf:resource="root"/>
+    <Class rdf:about="http://www.w3.org/2002/07/brain">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/root"/>
     </Class>
     
-
 
-    <!-- brainstem -->
 
+    <!-- http://www.w3.org/2002/07/brain_anatomy -->
 
-    <Class rdf:about="brainstem">
-        <rdfs:subClassOf rdf:resource="lren_atlas"/>
+    <Class rdf:about="http://www.w3.org/2002/07/brain_anatomy">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/brain"/>
     </Class>
     
 
 
-    <!-- cerebellarvermallobulesiv -->
+    <!-- http://www.w3.org/2002/07/brain_metabolism -->
 
-
-    <Class rdf:about="cerebellarvermallobulesiv">
-        <rdfs:subClassOf rdf:resource="cerebellum"/>
+    <Class rdf:about="http://www.w3.org/2002/07/brain_metabolism">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/root"/>
     </Class>
     
 
 
-    <!-- cerebellarvermallobulesviiix -->
+    <!-- http://www.w3.org/2002/07/brainstem -->
 
-
-    <Class rdf:about="cerebellarvermallobulesviiix">
-        <rdfs:subClassOf rdf:resource="cerebellum"/>
+    <Class rdf:about="http://www.w3.org/2002/07/brainstem">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/lren_atlas"/>
     </Class>
     
-
 
-    <!-- cerebellarvermallobulesvivii -->
 
+    <!-- http://www.w3.org/2002/07/cerebellarvermallobulesiv -->
 
-    <Class rdf:about="cerebellarvermallobulesvivii">
-        <rdfs:subClassOf rdf:resource="cerebellum"/>
+    <Class rdf:about="http://www.w3.org/2002/07/cerebellarvermallobulesiv">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/cerebellum"/>
     </Class>
     
 
 
-    <!-- cerebellum -->
+    <!-- http://www.w3.org/2002/07/cerebellarvermallobulesviiix -->
 
-
-    <Class rdf:about="cerebellum">
-        <rdfs:subClassOf rdf:resource="grey_matter_volume"/>
+    <Class rdf:about="http://www.w3.org/2002/07/cerebellarvermallobulesviiix">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/cerebellum"/>
     </Class>
     
 
 
-    <!-- cerebral_nuclei -->
+    <!-- http://www.w3.org/2002/07/cerebellarvermallobulesvivii -->
 
-
-    <Class rdf:about="cerebral_nuclei">
-        <rdfs:subClassOf rdf:resource="grey_matter_volume"/>
+    <Class rdf:about="http://www.w3.org/2002/07/cerebellarvermallobulesvivii">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/cerebellum"/>
     </Class>
     
-
 
-    <!-- clinical -->
 
+    <!-- http://www.w3.org/2002/07/cerebellum -->
 
-    <Class rdf:about="clinical">
-        <rdfs:subClassOf rdf:resource="root"/>
+    <Class rdf:about="http://www.w3.org/2002/07/cerebellum">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/grey_matter_volume"/>
     </Class>
     
 
 
-    <!-- csf -->
+    <!-- http://www.w3.org/2002/07/cerebral_nuclei -->
 
-
-    <Class rdf:about="csf">
-        <rdfs:subClassOf rdf:resource="lren_atlas"/>
+    <Class rdf:about="http://www.w3.org/2002/07/cerebral_nuclei">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/grey_matter_volume"/>
     </Class>
     
 
 
-    <!-- csfglobal -->
+    <!-- http://www.w3.org/2002/07/clinical -->
 
-
-    <Class rdf:about="csfglobal">
-        <rdfs:subClassOf rdf:resource="csf"/>
+    <Class rdf:about="http://www.w3.org/2002/07/clinical">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/root"/>
     </Class>
     
-
 
-    <!-- dataset -->
 
+    <!-- http://www.w3.org/2002/07/csf -->
 
-    <Class rdf:about="dataset">
-        <rdfs:subClassOf rdf:resource="provenance"/>
+    <Class rdf:about="http://www.w3.org/2002/07/csf">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/lren_atlas"/>
     </Class>
     
 
 
-    <!-- demographics -->
+    <!-- http://www.w3.org/2002/07/csfglobal -->
 
-
-    <Class rdf:about="demographics">
-        <rdfs:subClassOf rdf:resource="root"/>
+    <Class rdf:about="http://www.w3.org/2002/07/csfglobal">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/csf"/>
     </Class>
     
 
 
-    <!-- diagnosis -->
+    <!-- http://www.w3.org/2002/07/dataset -->
 
-
-    <Class rdf:about="diagnosis">
-        <rdfs:subClassOf rdf:resource="score"/>
+    <Class rdf:about="http://www.w3.org/2002/07/dataset">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/provenance"/>
     </Class>
     
-
 
-    <!-- diencephalon -->
 
+    <!-- http://www.w3.org/2002/07/demographics -->
 
-    <Class rdf:about="diencephalon">
-        <rdfs:subClassOf rdf:resource="grey_matter_volume"/>
+    <Class rdf:about="http://www.w3.org/2002/07/demographics">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/root"/>
     </Class>
     
 
 
-    <!-- edsdcategory -->
+    <!-- http://www.w3.org/2002/07/diagnosis -->
 
-
-    <Class rdf:about="edsdcategory">
-        <rdfs:subClassOf rdf:resource="diagnosis"/>
+    <Class rdf:about="http://www.w3.org/2002/07/diagnosis">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/score"/>
     </Class>
     
 
 
-    <!-- fdg -->
+    <!-- http://www.w3.org/2002/07/diencephalon -->
 
-
-    <Class rdf:about="fdg">
-        <rdfs:subClassOf rdf:resource="pet"/>
+    <Class rdf:about="http://www.w3.org/2002/07/diencephalon">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/grey_matter_volume"/>
     </Class>
     
-
 
-    <!-- frontal -->
 
+    <!-- http://www.w3.org/2002/07/edsdcategory -->
 
-    <Class rdf:about="frontal">
-        <rdfs:subClassOf rdf:resource="grey_matter_volume"/>
+    <Class rdf:about="http://www.w3.org/2002/07/edsdcategory">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/diagnosis"/>
     </Class>
     
 
 
-    <!-- gender -->
+    <!-- http://www.w3.org/2002/07/fdg -->
 
-
-    <Class rdf:about="gender">
-        <rdfs:subClassOf rdf:resource="demographics"/>
+    <Class rdf:about="http://www.w3.org/2002/07/fdg">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/pet"/>
     </Class>
     
 
 
-    <!-- genetic -->
+    <!-- http://www.w3.org/2002/07/frontal -->
 
-
-    <Class rdf:about="genetic">
-        <rdfs:subClassOf rdf:resource="root"/>
+    <Class rdf:about="http://www.w3.org/2002/07/frontal">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/grey_matter_volume"/>
     </Class>
     
-
 
-    <!-- grey_matter_volume -->
 
+    <!-- http://www.w3.org/2002/07/gender -->
 
-    <Class rdf:about="grey_matter_volume">
-        <rdfs:subClassOf rdf:resource="lren_atlas"/>
+    <Class rdf:about="http://www.w3.org/2002/07/gender">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/demographics"/>
     </Class>
     
 
 
-    <!-- handedness -->
+    <!-- http://www.w3.org/2002/07/genetic -->
 
-
-    <Class rdf:about="handedness">
-        <rdfs:subClassOf rdf:resource="demographics"/>
+    <Class rdf:about="http://www.w3.org/2002/07/genetic">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/root"/>
     </Class>
     
 
 
-    <!-- insula -->
+    <!-- http://www.w3.org/2002/07/grey_matter_volume -->
 
-
-    <Class rdf:about="insula">
-        <rdfs:subClassOf rdf:resource="grey_matter_volume"/>
+    <Class rdf:about="http://www.w3.org/2002/07/grey_matter_volume">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/lren_atlas"/>
     </Class>
     
-
 
-    <!-- leftaccumbensarea -->
 
+    <!-- http://www.w3.org/2002/07/handedness -->
 
-    <Class rdf:about="leftaccumbensarea">
-        <rdfs:subClassOf rdf:resource="basal_ganglia"/>
+    <Class rdf:about="http://www.w3.org/2002/07/handedness">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/demographics"/>
     </Class>
     
 
 
-    <!-- leftacgganteriorcingulategyrus -->
+    <!-- http://www.w3.org/2002/07/insula -->
 
-
-    <Class rdf:about="leftacgganteriorcingulategyrus">
-        <rdfs:subClassOf rdf:resource="limbic"/>
+    <Class rdf:about="http://www.w3.org/2002/07/insula">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/grey_matter_volume"/>
     </Class>
     
 
 
-    <!-- leftainsanteriorinsula -->
+    <!-- http://www.w3.org/2002/07/leftaccumbensarea -->
 
-
-    <Class rdf:about="leftainsanteriorinsula">
-        <rdfs:subClassOf rdf:resource="insula"/>
+    <Class rdf:about="http://www.w3.org/2002/07/leftaccumbensarea">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/basal_ganglia"/>
     </Class>
     
-
 
-    <!-- leftamygdala -->
 
+    <!-- http://www.w3.org/2002/07/leftacgganteriorcingulategyrus -->
 
-    <Class rdf:about="leftamygdala">
-        <rdfs:subClassOf rdf:resource="amygdala"/>
+    <Class rdf:about="http://www.w3.org/2002/07/leftacgganteriorcingulategyrus">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/limbic"/>
     </Class>
     
 
 
-    <!-- leftangangulargyrus -->
+    <!-- http://www.w3.org/2002/07/leftainsanteriorinsula -->
 
-
-    <Class rdf:about="leftangangulargyrus">
-        <rdfs:subClassOf rdf:resource="parietal"/>
+    <Class rdf:about="http://www.w3.org/2002/07/leftainsanteriorinsula">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/insula"/>
     </Class>
     
 
 
-    <!-- leftaorganteriororbitalgyrus -->
+    <!-- http://www.w3.org/2002/07/leftamygdala -->
 
-
-    <Class rdf:about="leftaorganteriororbitalgyrus">
-        <rdfs:subClassOf rdf:resource="frontal"/>
+    <Class rdf:about="http://www.w3.org/2002/07/leftamygdala">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/amygdala"/>
     </Class>
     
-
 
-    <!-- leftbasalforebrain -->
 
+    <!-- http://www.w3.org/2002/07/leftangangulargyrus -->
 
-    <Class rdf:about="leftbasalforebrain">
-        <rdfs:subClassOf rdf:resource="basal_ganglia"/>
+    <Class rdf:about="http://www.w3.org/2002/07/leftangangulargyrus">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/parietal"/>
     </Class>
     
 
 
-    <!-- leftcalccalcarinecortex -->
+    <!-- http://www.w3.org/2002/07/leftaorganteriororbitalgyrus -->
 
-
-    <Class rdf:about="leftcalccalcarinecortex">
-        <rdfs:subClassOf rdf:resource="occipital"/>
+    <Class rdf:about="http://www.w3.org/2002/07/leftaorganteriororbitalgyrus">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/frontal"/>
     </Class>
     
 
 
-    <!-- leftcaudate -->
+    <!-- http://www.w3.org/2002/07/leftbasalforebrain -->
 
-
-    <Class rdf:about="leftcaudate">
-        <rdfs:subClassOf rdf:resource="basal_ganglia"/>
+    <Class rdf:about="http://www.w3.org/2002/07/leftbasalforebrain">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/basal_ganglia"/>
     </Class>
     
-
 
-    <!-- leftcerebellumexterior -->
 
+    <!-- http://www.w3.org/2002/07/leftcalccalcarinecortex -->
 
-    <Class rdf:about="leftcerebellumexterior">
-        <rdfs:subClassOf rdf:resource="cerebellum"/>
+    <Class rdf:about="http://www.w3.org/2002/07/leftcalccalcarinecortex">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/occipital"/>
     </Class>
     
 
 
-    <!-- leftcerebellumwhitematter -->
+    <!-- http://www.w3.org/2002/07/leftcaudate -->
 
-
-    <Class rdf:about="leftcerebellumwhitematter">
-        <rdfs:subClassOf rdf:resource="white_matter_volume"/>
+    <Class rdf:about="http://www.w3.org/2002/07/leftcaudate">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/basal_ganglia"/>
     </Class>
     
 
 
-    <!-- leftcerebralwhitematter -->
+    <!-- http://www.w3.org/2002/07/leftcerebellumexterior -->
 
-
-    <Class rdf:about="leftcerebralwhitematter">
-        <rdfs:subClassOf rdf:resource="white_matter_volume"/>
+    <Class rdf:about="http://www.w3.org/2002/07/leftcerebellumexterior">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/cerebellum"/>
     </Class>
     
-
 
-    <!-- leftcocentraloperculum -->
 
+    <!-- http://www.w3.org/2002/07/leftcerebellumwhitematter -->
 
-    <Class rdf:about="leftcocentraloperculum">
-        <rdfs:subClassOf rdf:resource="frontal"/>
+    <Class rdf:about="http://www.w3.org/2002/07/leftcerebellumwhitematter">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/white_matter_volume"/>
     </Class>
     
 
 
-    <!-- leftcuncuneus -->
+    <!-- http://www.w3.org/2002/07/leftcerebralwhitematter -->
 
-
-    <Class rdf:about="leftcuncuneus">
-        <rdfs:subClassOf rdf:resource="occipital"/>
+    <Class rdf:about="http://www.w3.org/2002/07/leftcerebralwhitematter">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/white_matter_volume"/>
     </Class>
     
-
 
-    <!-- leftententorhinalarea -->
 
+    <!-- http://www.w3.org/2002/07/leftcocentraloperculum -->
 
-    <Class rdf:about="leftententorhinalarea">
-        <rdfs:subClassOf rdf:resource="limbic"/>
+    <Class rdf:about="http://www.w3.org/2002/07/leftcocentraloperculum">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/frontal"/>
     </Class>
     
 
 
-    <!-- leftfofrontaloperculum -->
+    <!-- http://www.w3.org/2002/07/leftcuncuneus -->
 
-
-    <Class rdf:about="leftfofrontaloperculum">
-        <rdfs:subClassOf rdf:resource="frontal"/>
+    <Class rdf:about="http://www.w3.org/2002/07/leftcuncuneus">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/occipital"/>
     </Class>
     
-
 
-    <!-- leftfrpfrontalpole -->
 
+    <!-- http://www.w3.org/2002/07/leftententorhinalarea -->
 
-    <Class rdf:about="leftfrpfrontalpole">
-        <rdfs:subClassOf rdf:resource="frontal"/>
+    <Class rdf:about="http://www.w3.org/2002/07/leftententorhinalarea">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/limbic"/>
     </Class>
     
 
 
-    <!-- leftfugfusiformgyrus -->
+    <!-- http://www.w3.org/2002/07/leftfofrontaloperculum -->
 
-
-    <Class rdf:about="leftfugfusiformgyrus">
-        <rdfs:subClassOf rdf:resource="temporal"/>
+    <Class rdf:about="http://www.w3.org/2002/07/leftfofrontaloperculum">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/frontal"/>
     </Class>
     
 
 
-    <!-- leftgregyrusrectus -->
+    <!-- http://www.w3.org/2002/07/leftfrpfrontalpole -->
 
-
-    <Class rdf:about="leftgregyrusrectus">
-        <rdfs:subClassOf rdf:resource="frontal"/>
+    <Class rdf:about="http://www.w3.org/2002/07/leftfrpfrontalpole">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/frontal"/>
     </Class>
     
-
 
-    <!-- lefthippocampus -->
 
+    <!-- http://www.w3.org/2002/07/leftfugfusiformgyrus -->
 
-    <Class rdf:about="lefthippocampus">
-        <rdfs:subClassOf rdf:resource="limbic"/>
+    <Class rdf:about="http://www.w3.org/2002/07/leftfugfusiformgyrus">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/temporal"/>
     </Class>
     
 
 
-    <!-- leftinflatvent -->
+    <!-- http://www.w3.org/2002/07/leftgregyrusrectus -->
 
-
-    <Class rdf:about="leftinflatvent">
-        <rdfs:subClassOf rdf:resource="csf"/>
+    <Class rdf:about="http://www.w3.org/2002/07/leftgregyrusrectus">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/frontal"/>
     </Class>
     
 
 
-    <!-- leftioginferioroccipitalgyrus -->
+    <!-- http://www.w3.org/2002/07/lefthippocampus -->
 
-
-    <Class rdf:about="leftioginferioroccipitalgyrus">
-        <rdfs:subClassOf rdf:resource="occipital"/>
+    <Class rdf:about="http://www.w3.org/2002/07/lefthippocampus">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/limbic"/>
     </Class>
     
-
 
-    <!-- leftitginferiortemporalgyrus -->
 
+    <!-- http://www.w3.org/2002/07/leftinflatvent -->
 
-    <Class rdf:about="leftitginferiortemporalgyrus">
-        <rdfs:subClassOf rdf:resource="temporal"/>
+    <Class rdf:about="http://www.w3.org/2002/07/leftinflatvent">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/csf"/>
     </Class>
     
 
 
-    <!-- leftlateralventricle -->
+    <!-- http://www.w3.org/2002/07/leftioginferioroccipitalgyrus -->
 
-
-    <Class rdf:about="leftlateralventricle">
-        <rdfs:subClassOf rdf:resource="csf"/>
+    <Class rdf:about="http://www.w3.org/2002/07/leftioginferioroccipitalgyrus">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/occipital"/>
     </Class>
     
 
 
-    <!-- leftliglingualgyrus -->
+    <!-- http://www.w3.org/2002/07/leftitginferiortemporalgyrus -->
 
-
-    <Class rdf:about="leftliglingualgyrus">
-        <rdfs:subClassOf rdf:resource="occipital"/>
+    <Class rdf:about="http://www.w3.org/2002/07/leftitginferiortemporalgyrus">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/temporal"/>
     </Class>
     
-
 
-    <!-- leftlorglateralorbitalgyrus -->
 
+    <!-- http://www.w3.org/2002/07/leftlateralventricle -->
 
-    <Class rdf:about="leftlorglateralorbitalgyrus">
-        <rdfs:subClassOf rdf:resource="frontal"/>
+    <Class rdf:about="http://www.w3.org/2002/07/leftlateralventricle">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/csf"/>
     </Class>
     
 
 
-    <!-- leftmcggmiddlecingulategyrus -->
+    <!-- http://www.w3.org/2002/07/leftliglingualgyrus -->
 
-
-    <Class rdf:about="leftmcggmiddlecingulategyrus">
-        <rdfs:subClassOf rdf:resource="limbic"/>
+    <Class rdf:about="http://www.w3.org/2002/07/leftliglingualgyrus">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/occipital"/>
     </Class>
     
 
 
-    <!-- leftmfcmedialfrontalcortex -->
+    <!-- http://www.w3.org/2002/07/leftlorglateralorbitalgyrus -->
 
-
-    <Class rdf:about="leftmfcmedialfrontalcortex">
-        <rdfs:subClassOf rdf:resource="frontal"/>
+    <Class rdf:about="http://www.w3.org/2002/07/leftlorglateralorbitalgyrus">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/frontal"/>
     </Class>
     
-
 
-    <!-- leftmfgmiddlefrontalgyrus -->
 
+    <!-- http://www.w3.org/2002/07/leftmcggmiddlecingulategyrus -->
 
-    <Class rdf:about="leftmfgmiddlefrontalgyrus">
-        <rdfs:subClassOf rdf:resource="frontal"/>
+    <Class rdf:about="http://www.w3.org/2002/07/leftmcggmiddlecingulategyrus">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/limbic"/>
     </Class>
     
 
 
-    <!-- leftmogmiddleoccipitalgyrus -->
+    <!-- http://www.w3.org/2002/07/leftmfcmedialfrontalcortex -->
 
-
-    <Class rdf:about="leftmogmiddleoccipitalgyrus">
-        <rdfs:subClassOf rdf:resource="occipital"/>
+    <Class rdf:about="http://www.w3.org/2002/07/leftmfcmedialfrontalcortex">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/frontal"/>
     </Class>
     
 
 
-    <!-- leftmorgmedialorbitalgyrus -->
+    <!-- http://www.w3.org/2002/07/leftmfgmiddlefrontalgyrus -->
 
-
-    <Class rdf:about="leftmorgmedialorbitalgyrus">
-        <rdfs:subClassOf rdf:resource="frontal"/>
+    <Class rdf:about="http://www.w3.org/2002/07/leftmfgmiddlefrontalgyrus">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/frontal"/>
     </Class>
     
-
 
-    <!-- leftmpogpostcentralgyrusmedialsegment -->
 
+    <!-- http://www.w3.org/2002/07/leftmogmiddleoccipitalgyrus -->
 
-    <Class rdf:about="leftmpogpostcentralgyrusmedialsegment">
-        <rdfs:subClassOf rdf:resource="parietal"/>
+    <Class rdf:about="http://www.w3.org/2002/07/leftmogmiddleoccipitalgyrus">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/occipital"/>
     </Class>
     
 
 
-    <!-- leftmprgprecentralgyrusmedialsegment -->
+    <!-- http://www.w3.org/2002/07/leftmorgmedialorbitalgyrus -->
 
-
-    <Class rdf:about="leftmprgprecentralgyrusmedialsegment">
-        <rdfs:subClassOf rdf:resource="frontal"/>
+    <Class rdf:about="http://www.w3.org/2002/07/leftmorgmedialorbitalgyrus">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/frontal"/>
     </Class>
     
 
 
-    <!-- leftmsfgsuperiorfrontalgyrusmedialsegment -->
+    <!-- http://www.w3.org/2002/07/leftmpogpostcentralgyrusmedialsegment -->
 
-
-    <Class rdf:about="leftmsfgsuperiorfrontalgyrusmedialsegment">
-        <rdfs:subClassOf rdf:resource="frontal"/>
+    <Class rdf:about="http://www.w3.org/2002/07/leftmpogpostcentralgyrusmedialsegment">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/parietal"/>
     </Class>
     
-
 
-    <!-- leftmtgmiddletemporalgyrus -->
 
+    <!-- http://www.w3.org/2002/07/leftmprgprecentralgyrusmedialsegment -->
 
-    <Class rdf:about="leftmtgmiddletemporalgyrus">
-        <rdfs:subClassOf rdf:resource="temporal"/>
+    <Class rdf:about="http://www.w3.org/2002/07/leftmprgprecentralgyrusmedialsegment">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/frontal"/>
     </Class>
     
 
 
-    <!-- leftocpoccipitalpole -->
+    <!-- http://www.w3.org/2002/07/leftmsfgsuperiorfrontalgyrusmedialsegment -->
 
-
-    <Class rdf:about="leftocpoccipitalpole">
-        <rdfs:subClassOf rdf:resource="occipital"/>
+    <Class rdf:about="http://www.w3.org/2002/07/leftmsfgsuperiorfrontalgyrusmedialsegment">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/frontal"/>
     </Class>
     
 
 
-    <!-- leftofugoccipitalfusiformgyrus -->
+    <!-- http://www.w3.org/2002/07/leftmtgmiddletemporalgyrus -->
 
-
-    <Class rdf:about="leftofugoccipitalfusiformgyrus">
-        <rdfs:subClassOf rdf:resource="occipital"/>
+    <Class rdf:about="http://www.w3.org/2002/07/leftmtgmiddletemporalgyrus">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/temporal"/>
     </Class>
     
-
 
-    <!-- leftopifgopercularpartoftheinferiorfrontalgyrus -->
 
+    <!-- http://www.w3.org/2002/07/leftocpoccipitalpole -->
 
-    <Class rdf:about="leftopifgopercularpartoftheinferiorfrontalgyrus">
-        <rdfs:subClassOf rdf:resource="frontal"/>
+    <Class rdf:about="http://www.w3.org/2002/07/leftocpoccipitalpole">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/occipital"/>
     </Class>
     
 
 
-    <!-- leftorifgorbitalpartoftheinferiorfrontalgyrus -->
+    <!-- http://www.w3.org/2002/07/leftofugoccipitalfusiformgyrus -->
 
-
-    <Class rdf:about="leftorifgorbitalpartoftheinferiorfrontalgyrus">
-        <rdfs:subClassOf rdf:resource="frontal"/>
+    <Class rdf:about="http://www.w3.org/2002/07/leftofugoccipitalfusiformgyrus">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/occipital"/>
     </Class>
     
-
 
-    <!-- leftpallidum -->
 
+    <!-- http://www.w3.org/2002/07/leftopifgopercularpartoftheinferiorfrontalgyrus -->
 
-    <Class rdf:about="leftpallidum">
-        <rdfs:subClassOf rdf:resource="basal_ganglia"/>
+    <Class rdf:about="http://www.w3.org/2002/07/leftopifgopercularpartoftheinferiorfrontalgyrus">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/frontal"/>
     </Class>
     
 
 
-    <!-- leftpcggposteriorcingulategyrus -->
+    <!-- http://www.w3.org/2002/07/leftorifgorbitalpartoftheinferiorfrontalgyrus -->
 
-
-    <Class rdf:about="leftpcggposteriorcingulategyrus">
-        <rdfs:subClassOf rdf:resource="limbic"/>
+    <Class rdf:about="http://www.w3.org/2002/07/leftorifgorbitalpartoftheinferiorfrontalgyrus">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/frontal"/>
     </Class>
     
-
 
-    <!-- leftpcuprecuneus -->
 
+    <!-- http://www.w3.org/2002/07/leftpallidum -->
 
-    <Class rdf:about="leftpcuprecuneus">
-        <rdfs:subClassOf rdf:resource="parietal"/>
+    <Class rdf:about="http://www.w3.org/2002/07/leftpallidum">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/basal_ganglia"/>
     </Class>
     
 
 
-    <!-- leftphgparahippocampalgyrus -->
+    <!-- http://www.w3.org/2002/07/leftpcggposteriorcingulategyrus -->
 
-
-    <Class rdf:about="leftphgparahippocampalgyrus">
-        <rdfs:subClassOf rdf:resource="limbic"/>
+    <Class rdf:about="http://www.w3.org/2002/07/leftpcggposteriorcingulategyrus">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/limbic"/>
     </Class>
     
 
 
-    <!-- leftpinsposteriorinsula -->
+    <!-- http://www.w3.org/2002/07/leftpcuprecuneus -->
 
-
-    <Class rdf:about="leftpinsposteriorinsula">
-        <rdfs:subClassOf rdf:resource="insula"/>
+    <Class rdf:about="http://www.w3.org/2002/07/leftpcuprecuneus">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/parietal"/>
     </Class>
     
-
 
-    <!-- leftpogpostcentralgyrus -->
 
+    <!-- http://www.w3.org/2002/07/leftphgparahippocampalgyrus -->
 
-    <Class rdf:about="leftpogpostcentralgyrus">
-        <rdfs:subClassOf rdf:resource="parietal"/>
+    <Class rdf:about="http://www.w3.org/2002/07/leftphgparahippocampalgyrus">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/limbic"/>
     </Class>
     
 
 
-    <!-- leftpoparietaloperculum -->
+    <!-- http://www.w3.org/2002/07/leftpinsposteriorinsula -->
 
-
-    <Class rdf:about="leftpoparietaloperculum">
-        <rdfs:subClassOf rdf:resource="frontal"/>
+    <Class rdf:about="http://www.w3.org/2002/07/leftpinsposteriorinsula">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/insula"/>
     </Class>
     
 
 
-    <!-- leftporgposteriororbitalgyrus -->
+    <!-- http://www.w3.org/2002/07/leftpogpostcentralgyrus -->
 
-
-    <Class rdf:about="leftporgposteriororbitalgyrus">
-        <rdfs:subClassOf rdf:resource="frontal"/>
+    <Class rdf:about="http://www.w3.org/2002/07/leftpogpostcentralgyrus">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/parietal"/>
     </Class>
     
-
 
-    <!-- leftppplanumpolare -->
 
+    <!-- http://www.w3.org/2002/07/leftpoparietaloperculum -->
 
-    <Class rdf:about="leftppplanumpolare">
-        <rdfs:subClassOf rdf:resource="temporal"/>
+    <Class rdf:about="http://www.w3.org/2002/07/leftpoparietaloperculum">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/frontal"/>
     </Class>
     
 
 
-    <!-- leftprgprecentralgyrus -->
+    <!-- http://www.w3.org/2002/07/leftporgposteriororbitalgyrus -->
 
-
-    <Class rdf:about="leftprgprecentralgyrus">
-        <rdfs:subClassOf rdf:resource="frontal"/>
+    <Class rdf:about="http://www.w3.org/2002/07/leftporgposteriororbitalgyrus">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/frontal"/>
     </Class>
     
 
 
-    <!-- leftptplanumtemporale -->
+    <!-- http://www.w3.org/2002/07/leftppplanumpolare -->
 
-
-    <Class rdf:about="leftptplanumtemporale">
-        <rdfs:subClassOf rdf:resource="temporal"/>
+    <Class rdf:about="http://www.w3.org/2002/07/leftppplanumpolare">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/temporal"/>
     </Class>
     
-
 
-    <!-- leftputamen -->
 
+    <!-- http://www.w3.org/2002/07/leftprgprecentralgyrus -->
 
-    <Class rdf:about="leftputamen">
-        <rdfs:subClassOf rdf:resource="basal_ganglia"/>
+    <Class rdf:about="http://www.w3.org/2002/07/leftprgprecentralgyrus">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/frontal"/>
     </Class>
     
 
 
-    <!-- leftscasubcallosalarea -->
+    <!-- http://www.w3.org/2002/07/leftptplanumtemporale -->
 
-
-    <Class rdf:about="leftscasubcallosalarea">
-        <rdfs:subClassOf rdf:resource="frontal"/>
+    <Class rdf:about="http://www.w3.org/2002/07/leftptplanumtemporale">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/temporal"/>
     </Class>
     
 
 
-    <!-- leftsfgsuperiorfrontalgyrus -->
+    <!-- http://www.w3.org/2002/07/leftputamen -->
 
-
-    <Class rdf:about="leftsfgsuperiorfrontalgyrus">
-        <rdfs:subClassOf rdf:resource="frontal"/>
+    <Class rdf:about="http://www.w3.org/2002/07/leftputamen">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/basal_ganglia"/>
     </Class>
     
-
 
-    <!-- leftsmcsupplementarymotorcortex -->
 
+    <!-- http://www.w3.org/2002/07/leftscasubcallosalarea -->
 
-    <Class rdf:about="leftsmcsupplementarymotorcortex">
-        <rdfs:subClassOf rdf:resource="frontal"/>
+    <Class rdf:about="http://www.w3.org/2002/07/leftscasubcallosalarea">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/frontal"/>
     </Class>
     
 
 
-    <!-- leftsmgsupramarginalgyrus -->
+    <!-- http://www.w3.org/2002/07/leftsfgsuperiorfrontalgyrus -->
 
-
-    <Class rdf:about="leftsmgsupramarginalgyrus">
-        <rdfs:subClassOf rdf:resource="parietal"/>
+    <Class rdf:about="http://www.w3.org/2002/07/leftsfgsuperiorfrontalgyrus">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/frontal"/>
     </Class>
     
 
 
-    <!-- leftsogsuperioroccipitalgyrus -->
+    <!-- http://www.w3.org/2002/07/leftsmcsupplementarymotorcortex -->
 
-
-    <Class rdf:about="leftsogsuperioroccipitalgyrus">
-        <rdfs:subClassOf rdf:resource="occipital"/>
+    <Class rdf:about="http://www.w3.org/2002/07/leftsmcsupplementarymotorcortex">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/frontal"/>
     </Class>
     
-
 
-    <!-- leftsplsuperiorparietallobule -->
 
+    <!-- http://www.w3.org/2002/07/leftsmgsupramarginalgyrus -->
 
-    <Class rdf:about="leftsplsuperiorparietallobule">
-        <rdfs:subClassOf rdf:resource="parietal"/>
+    <Class rdf:about="http://www.w3.org/2002/07/leftsmgsupramarginalgyrus">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/parietal"/>
     </Class>
     
 
 
-    <!-- leftstgsuperiortemporalgyrus -->
+    <!-- http://www.w3.org/2002/07/leftsogsuperioroccipitalgyrus -->
 
-
-    <Class rdf:about="leftstgsuperiortemporalgyrus">
-        <rdfs:subClassOf rdf:resource="temporal"/>
+    <Class rdf:about="http://www.w3.org/2002/07/leftsogsuperioroccipitalgyrus">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/occipital"/>
     </Class>
     
 
 
-    <!-- leftthalamusproper -->
+    <!-- http://www.w3.org/2002/07/leftsplsuperiorparietallobule -->
 
-
-    <Class rdf:about="leftthalamusproper">
-        <rdfs:subClassOf rdf:resource="limbic"/>
+    <Class rdf:about="http://www.w3.org/2002/07/leftsplsuperiorparietallobule">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/parietal"/>
     </Class>
     
-
 
-    <!-- lefttmptemporalpole -->
 
+    <!-- http://www.w3.org/2002/07/leftstgsuperiortemporalgyrus -->
 
-    <Class rdf:about="lefttmptemporalpole">
-        <rdfs:subClassOf rdf:resource="temporal"/>
+    <Class rdf:about="http://www.w3.org/2002/07/leftstgsuperiortemporalgyrus">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/temporal"/>
     </Class>
     
 
 
-    <!-- lefttrifgtriangularpartoftheinferiorfrontalgyrus -->
+    <!-- http://www.w3.org/2002/07/leftthalamusproper -->
 
-
-    <Class rdf:about="lefttrifgtriangularpartoftheinferiorfrontalgyrus">
-        <rdfs:subClassOf rdf:resource="frontal"/>
+    <Class rdf:about="http://www.w3.org/2002/07/leftthalamusproper">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/limbic"/>
     </Class>
     
 
 
-    <!-- leftttgtransversetemporalgyrus -->
+    <!-- http://www.w3.org/2002/07/lefttmptemporalpole -->
 
-
-    <Class rdf:about="leftttgtransversetemporalgyrus">
-        <rdfs:subClassOf rdf:resource="temporal"/>
+    <Class rdf:about="http://www.w3.org/2002/07/lefttmptemporalpole">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/temporal"/>
     </Class>
     
-
 
-    <!-- leftventraldc -->
 
+    <!-- http://www.w3.org/2002/07/lefttrifgtriangularpartoftheinferiorfrontalgyrus -->
 
-    <Class rdf:about="leftventraldc">
-        <rdfs:subClassOf rdf:resource="diencephalon"/>
+    <Class rdf:about="http://www.w3.org/2002/07/lefttrifgtriangularpartoftheinferiorfrontalgyrus">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/frontal"/>
     </Class>
     
 
 
-    <!-- limbic -->
+    <!-- http://www.w3.org/2002/07/leftttgtransversetemporalgyrus -->
 
-
-    <Class rdf:about="limbic">
-        <rdfs:subClassOf rdf:resource="grey_matter_volume"/>
+    <Class rdf:about="http://www.w3.org/2002/07/leftttgtransversetemporalgyrus">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/temporal"/>
     </Class>
     
-
 
-    <!-- lren_atlas -->
 
+    <!-- http://www.w3.org/2002/07/leftventraldc -->
 
-    <Class rdf:about="lren_atlas">
-        <rdfs:subClassOf rdf:resource="brain_anatomy"/>
+    <Class rdf:about="http://www.w3.org/2002/07/leftventraldc">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/diencephalon"/>
     </Class>
     
 
 
-    <!-- minimentalstate -->
+    <!-- http://www.w3.org/2002/07/limbic -->
 
-
-    <Class rdf:about="minimentalstate">
-        <rdfs:subClassOf rdf:resource="mmse"/>
+    <Class rdf:about="http://www.w3.org/2002/07/limbic">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/grey_matter_volume"/>
     </Class>
     
-
 
-    <!-- mmse -->
 
+    <!-- http://www.w3.org/2002/07/lren_atlas -->
 
-    <Class rdf:about="mmse">
-        <rdfs:subClassOf rdf:resource="score"/>
+    <Class rdf:about="http://www.w3.org/2002/07/lren_atlas">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/brain_anatomy"/>
     </Class>
     
 
 
-    <!-- moca -->
+    <!-- http://www.w3.org/2002/07/minimentalstate -->
 
-
-    <Class rdf:about="moca">
-        <rdfs:subClassOf rdf:resource="score"/>
+    <Class rdf:about="http://www.w3.org/2002/07/minimentalstate">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/mmse"/>
     </Class>
     
 
 
-    <!-- montrealcognitiveassessment -->
+    <!-- http://www.w3.org/2002/07/mmse -->
 
-
-    <Class rdf:about="montrealcognitiveassessment">
-        <rdfs:subClassOf rdf:resource="moca"/>
+    <Class rdf:about="http://www.w3.org/2002/07/mmse">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/score"/>
     </Class>
     
-
 
-    <!-- neurogenerativescategories -->
 
+    <!-- http://www.w3.org/2002/07/moca -->
 
-    <Class rdf:about="neurogenerativescategories">
-        <rdfs:subClassOf rdf:resource="diagnosis"/>
+    <Class rdf:about="http://www.w3.org/2002/07/moca">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/score"/>
     </Class>
     
 
 
-    <!-- occipital -->
+    <!-- http://www.w3.org/2002/07/montrealcognitiveassessment -->
 
-
-    <Class rdf:about="occipital">
-        <rdfs:subClassOf rdf:resource="grey_matter_volume"/>
+    <Class rdf:about="http://www.w3.org/2002/07/montrealcognitiveassessment">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/moca"/>
     </Class>
     
 
 
-    <!-- opticchiasm -->
+    <!-- http://www.w3.org/2002/07/neurogenerativescategories -->
 
-
-    <Class rdf:about="opticchiasm">
-        <rdfs:subClassOf rdf:resource="white_matter_volume"/>
+    <Class rdf:about="http://www.w3.org/2002/07/neurogenerativescategories">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/diagnosis"/>
     </Class>
     
-
 
-    <!-- parietal -->
 
+    <!-- http://www.w3.org/2002/07/occipital -->
 
-    <Class rdf:about="parietal">
-        <rdfs:subClassOf rdf:resource="grey_matter_volume"/>
+    <Class rdf:about="http://www.w3.org/2002/07/occipital">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/grey_matter_volume"/>
     </Class>
     
 
 
-    <!-- parkinsonbroadcategory -->
+    <!-- http://www.w3.org/2002/07/opticchiasm -->
 
-
-    <Class rdf:about="parkinsonbroadcategory">
-        <rdfs:subClassOf rdf:resource="diagnosis"/>
+    <Class rdf:about="http://www.w3.org/2002/07/opticchiasm">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/white_matter_volume"/>
     </Class>
     
 
 
-    <!-- pet -->
+    <!-- http://www.w3.org/2002/07/parietal -->
 
-
-    <Class rdf:about="pet">
-        <rdfs:subClassOf rdf:resource="brain_metabolism"/>
+    <Class rdf:about="http://www.w3.org/2002/07/parietal">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/grey_matter_volume"/>
     </Class>
     
-
 
-    <!-- pib -->
 
+    <!-- http://www.w3.org/2002/07/parkinsonbroadcategory -->
 
-    <Class rdf:about="pib">
-        <rdfs:subClassOf rdf:resource="pet"/>
+    <Class rdf:about="http://www.w3.org/2002/07/parkinsonbroadcategory">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/diagnosis"/>
     </Class>
     
 
 
-    <!-- polymorphism -->
+    <!-- http://www.w3.org/2002/07/pet -->
 
-
-    <Class rdf:about="polymorphism">
-        <rdfs:subClassOf rdf:resource="genetic"/>
+    <Class rdf:about="http://www.w3.org/2002/07/pet">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/brain_metabolism"/>
     </Class>
     
 
 
-    <!-- ppmicategory -->
+    <!-- http://www.w3.org/2002/07/pib -->
 
-
-    <Class rdf:about="ppmicategory">
-        <rdfs:subClassOf rdf:resource="diagnosis"/>
+    <Class rdf:about="http://www.w3.org/2002/07/pib">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/pet"/>
     </Class>
     
-
 
-    <!-- provenance -->
 
+    <!-- http://www.w3.org/2002/07/polymorphism -->
 
-    <Class rdf:about="provenance">
-        <rdfs:subClassOf rdf:resource="root"/>
+    <Class rdf:about="http://www.w3.org/2002/07/polymorphism">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/genetic"/>
     </Class>
     
 
 
-    <!-- rightaccumbensarea -->
+    <!-- http://www.w3.org/2002/07/ppmicategory -->
 
-
-    <Class rdf:about="rightaccumbensarea">
-        <rdfs:subClassOf rdf:resource="basal_ganglia"/>
+    <Class rdf:about="http://www.w3.org/2002/07/ppmicategory">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/diagnosis"/>
     </Class>
     
 
 
-    <!-- rightacgganteriorcingulategyrus -->
+    <!-- http://www.w3.org/2002/07/provenance -->
 
-
-    <Class rdf:about="rightacgganteriorcingulategyrus">
-        <rdfs:subClassOf rdf:resource="limbic"/>
+    <Class rdf:about="http://www.w3.org/2002/07/provenance">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/root"/>
     </Class>
     
-
 
-    <!-- rightainsanteriorinsula -->
 
+    <!-- http://www.w3.org/2002/07/rightaccumbensarea -->
 
-    <Class rdf:about="rightainsanteriorinsula">
-        <rdfs:subClassOf rdf:resource="insula"/>
+    <Class rdf:about="http://www.w3.org/2002/07/rightaccumbensarea">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/basal_ganglia"/>
     </Class>
     
 
 
-    <!-- rightamygdala -->
+    <!-- http://www.w3.org/2002/07/rightacgganteriorcingulategyrus -->
 
-
-    <Class rdf:about="rightamygdala">
-        <rdfs:subClassOf rdf:resource="amygdala"/>
+    <Class rdf:about="http://www.w3.org/2002/07/rightacgganteriorcingulategyrus">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/limbic"/>
     </Class>
     
 
 
-    <!-- rightangangulargyrus -->
+    <!-- http://www.w3.org/2002/07/rightainsanteriorinsula -->
 
-
-    <Class rdf:about="rightangangulargyrus">
-        <rdfs:subClassOf rdf:resource="parietal"/>
+    <Class rdf:about="http://www.w3.org/2002/07/rightainsanteriorinsula">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/insula"/>
     </Class>
     
-
 
-    <!-- rightaorganteriororbitalgyrus -->
 
+    <!-- http://www.w3.org/2002/07/rightamygdala -->
 
-    <Class rdf:about="rightaorganteriororbitalgyrus">
-        <rdfs:subClassOf rdf:resource="frontal"/>
+    <Class rdf:about="http://www.w3.org/2002/07/rightamygdala">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/amygdala"/>
     </Class>
     
 
 
-    <!-- rightbasalforebrain -->
+    <!-- http://www.w3.org/2002/07/rightangangulargyrus -->
 
-
-    <Class rdf:about="rightbasalforebrain">
-        <rdfs:subClassOf rdf:resource="basal_ganglia"/>
+    <Class rdf:about="http://www.w3.org/2002/07/rightangangulargyrus">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/parietal"/>
     </Class>
     
 
 
-    <!-- rightcalccalcarinecortex -->
+    <!-- http://www.w3.org/2002/07/rightaorganteriororbitalgyrus -->
 
-
-    <Class rdf:about="rightcalccalcarinecortex">
-        <rdfs:subClassOf rdf:resource="occipital"/>
+    <Class rdf:about="http://www.w3.org/2002/07/rightaorganteriororbitalgyrus">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/frontal"/>
     </Class>
     
-
 
-    <!-- rightcaudate -->
 
+    <!-- http://www.w3.org/2002/07/rightbasalforebrain -->
 
-    <Class rdf:about="rightcaudate">
-        <rdfs:subClassOf rdf:resource="basal_ganglia"/>
+    <Class rdf:about="http://www.w3.org/2002/07/rightbasalforebrain">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/basal_ganglia"/>
     </Class>
     
 
 
-    <!-- rightcerebellumexterior -->
+    <!-- http://www.w3.org/2002/07/rightcalccalcarinecortex -->
 
-
-    <Class rdf:about="rightcerebellumexterior">
-        <rdfs:subClassOf rdf:resource="cerebellum"/>
+    <Class rdf:about="http://www.w3.org/2002/07/rightcalccalcarinecortex">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/occipital"/>
     </Class>
     
-
 
-    <!-- rightcerebellumwhitematter -->
 
+    <!-- http://www.w3.org/2002/07/rightcaudate -->
 
-    <Class rdf:about="rightcerebellumwhitematter">
-        <rdfs:subClassOf rdf:resource="white_matter_volume"/>
+    <Class rdf:about="http://www.w3.org/2002/07/rightcaudate">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/basal_ganglia"/>
     </Class>
     
 
 
-    <!-- rightcerebralwhitematter -->
+    <!-- http://www.w3.org/2002/07/rightcerebellumexterior -->
 
-
-    <Class rdf:about="rightcerebralwhitematter">
-        <rdfs:subClassOf rdf:resource="white_matter_volume"/>
+    <Class rdf:about="http://www.w3.org/2002/07/rightcerebellumexterior">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/cerebellum"/>
     </Class>
     
-
 
-    <!-- rightcocentraloperculum -->
 
+    <!-- http://www.w3.org/2002/07/rightcerebellumwhitematter -->
 
-    <Class rdf:about="rightcocentraloperculum">
-        <rdfs:subClassOf rdf:resource="frontal"/>
+    <Class rdf:about="http://www.w3.org/2002/07/rightcerebellumwhitematter">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/white_matter_volume"/>
     </Class>
     
 
 
-    <!-- rightcuncuneus -->
+    <!-- http://www.w3.org/2002/07/rightcerebralwhitematter -->
 
-
-    <Class rdf:about="rightcuncuneus">
-        <rdfs:subClassOf rdf:resource="occipital"/>
+    <Class rdf:about="http://www.w3.org/2002/07/rightcerebralwhitematter">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/white_matter_volume"/>
     </Class>
     
 
 
-    <!-- rightententorhinalarea -->
+    <!-- http://www.w3.org/2002/07/rightcocentraloperculum -->
 
-
-    <Class rdf:about="rightententorhinalarea">
-        <rdfs:subClassOf rdf:resource="limbic"/>
+    <Class rdf:about="http://www.w3.org/2002/07/rightcocentraloperculum">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/frontal"/>
     </Class>
     
-
 
-    <!-- rightfofrontaloperculum -->
 
+    <!-- http://www.w3.org/2002/07/rightcuncuneus -->
 
-    <Class rdf:about="rightfofrontaloperculum">
-        <rdfs:subClassOf rdf:resource="frontal"/>
+    <Class rdf:about="http://www.w3.org/2002/07/rightcuncuneus">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/occipital"/>
     </Class>
     
 
 
-    <!-- rightfrpfrontalpole -->
+    <!-- http://www.w3.org/2002/07/rightententorhinalarea -->
 
-
-    <Class rdf:about="rightfrpfrontalpole">
-        <rdfs:subClassOf rdf:resource="frontal"/>
+    <Class rdf:about="http://www.w3.org/2002/07/rightententorhinalarea">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/limbic"/>
     </Class>
     
 
 
-    <!-- rightfugfusiformgyrus -->
+    <!-- http://www.w3.org/2002/07/rightfofrontaloperculum -->
 
-
-    <Class rdf:about="rightfugfusiformgyrus">
-        <rdfs:subClassOf rdf:resource="temporal"/>
+    <Class rdf:about="http://www.w3.org/2002/07/rightfofrontaloperculum">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/frontal"/>
     </Class>
     
-
 
-    <!-- rightgregyrusrectus -->
 
+    <!-- http://www.w3.org/2002/07/rightfrpfrontalpole -->
 
-    <Class rdf:about="rightgregyrusrectus">
-        <rdfs:subClassOf rdf:resource="frontal"/>
+    <Class rdf:about="http://www.w3.org/2002/07/rightfrpfrontalpole">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/frontal"/>
     </Class>
     
 
 
-    <!-- righthippocampus -->
+    <!-- http://www.w3.org/2002/07/rightfugfusiformgyrus -->
 
-
-    <Class rdf:about="righthippocampus">
-        <rdfs:subClassOf rdf:resource="limbic"/>
+    <Class rdf:about="http://www.w3.org/2002/07/rightfugfusiformgyrus">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/temporal"/>
     </Class>
     
 
 
-    <!-- rightinflatvent -->
+    <!-- http://www.w3.org/2002/07/rightgregyrusrectus -->
 
-
-    <Class rdf:about="rightinflatvent">
-        <rdfs:subClassOf rdf:resource="csf"/>
+    <Class rdf:about="http://www.w3.org/2002/07/rightgregyrusrectus">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/frontal"/>
     </Class>
     
-
 
-    <!-- rightioginferioroccipitalgyrus -->
 
+    <!-- http://www.w3.org/2002/07/righthippocampus -->
 
-    <Class rdf:about="rightioginferioroccipitalgyrus">
-        <rdfs:subClassOf rdf:resource="occipital"/>
+    <Class rdf:about="http://www.w3.org/2002/07/righthippocampus">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/limbic"/>
     </Class>
     
 
 
-    <!-- rightitginferiortemporalgyrus -->
+    <!-- http://www.w3.org/2002/07/rightinflatvent -->
 
-
-    <Class rdf:about="rightitginferiortemporalgyrus">
-        <rdfs:subClassOf rdf:resource="temporal"/>
+    <Class rdf:about="http://www.w3.org/2002/07/rightinflatvent">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/csf"/>
     </Class>
     
 
 
-    <!-- rightlateralventricle -->
+    <!-- http://www.w3.org/2002/07/rightioginferioroccipitalgyrus -->
 
-
-    <Class rdf:about="rightlateralventricle">
-        <rdfs:subClassOf rdf:resource="csf"/>
+    <Class rdf:about="http://www.w3.org/2002/07/rightioginferioroccipitalgyrus">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/occipital"/>
     </Class>
     
-
 
-    <!-- rightliglingualgyrus -->
 
+    <!-- http://www.w3.org/2002/07/rightitginferiortemporalgyrus -->
 
-    <Class rdf:about="rightliglingualgyrus">
-        <rdfs:subClassOf rdf:resource="occipital"/>
+    <Class rdf:about="http://www.w3.org/2002/07/rightitginferiortemporalgyrus">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/temporal"/>
     </Class>
     
 
 
-    <!-- rightlorglateralorbitalgyrus -->
+    <!-- http://www.w3.org/2002/07/rightlateralventricle -->
 
-
-    <Class rdf:about="rightlorglateralorbitalgyrus">
-        <rdfs:subClassOf rdf:resource="frontal"/>
+    <Class rdf:about="http://www.w3.org/2002/07/rightlateralventricle">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/csf"/>
     </Class>
     
 
 
-    <!-- rightmcggmiddlecingulategyrus -->
+    <!-- http://www.w3.org/2002/07/rightliglingualgyrus -->
 
-
-    <Class rdf:about="rightmcggmiddlecingulategyrus">
-        <rdfs:subClassOf rdf:resource="limbic"/>
+    <Class rdf:about="http://www.w3.org/2002/07/rightliglingualgyrus">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/occipital"/>
     </Class>
     
-
 
-    <!-- rightmfcmedialfrontalcortex -->
 
+    <!-- http://www.w3.org/2002/07/rightlorglateralorbitalgyrus -->
 
-    <Class rdf:about="rightmfcmedialfrontalcortex">
-        <rdfs:subClassOf rdf:resource="frontal"/>
+    <Class rdf:about="http://www.w3.org/2002/07/rightlorglateralorbitalgyrus">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/frontal"/>
     </Class>
     
 
 
-    <!-- rightmfgmiddlefrontalgyrus -->
+    <!-- http://www.w3.org/2002/07/rightmcggmiddlecingulategyrus -->
 
-
-    <Class rdf:about="rightmfgmiddlefrontalgyrus">
-        <rdfs:subClassOf rdf:resource="frontal"/>
+    <Class rdf:about="http://www.w3.org/2002/07/rightmcggmiddlecingulategyrus">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/limbic"/>
     </Class>
     
 
 
-    <!-- rightmogmiddleoccipitalgyrus -->
+    <!-- http://www.w3.org/2002/07/rightmfcmedialfrontalcortex -->
 
-
-    <Class rdf:about="rightmogmiddleoccipitalgyrus">
-        <rdfs:subClassOf rdf:resource="occipital"/>
+    <Class rdf:about="http://www.w3.org/2002/07/rightmfcmedialfrontalcortex">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/frontal"/>
     </Class>
     
-
 
-    <!-- rightmorgmedialorbitalgyrus -->
 
+    <!-- http://www.w3.org/2002/07/rightmfgmiddlefrontalgyrus -->
 
-    <Class rdf:about="rightmorgmedialorbitalgyrus">
-        <rdfs:subClassOf rdf:resource="frontal"/>
+    <Class rdf:about="http://www.w3.org/2002/07/rightmfgmiddlefrontalgyrus">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/frontal"/>
     </Class>
     
 
 
-    <!-- rightmpogpostcentralgyrusmedialsegment -->
+    <!-- http://www.w3.org/2002/07/rightmogmiddleoccipitalgyrus -->
 
-
-    <Class rdf:about="rightmpogpostcentralgyrusmedialsegment">
-        <rdfs:subClassOf rdf:resource="parietal"/>
+    <Class rdf:about="http://www.w3.org/2002/07/rightmogmiddleoccipitalgyrus">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/occipital"/>
     </Class>
     
 
 
-    <!-- rightmprgprecentralgyrusmedialsegment -->
+    <!-- http://www.w3.org/2002/07/rightmorgmedialorbitalgyrus -->
 
-
-    <Class rdf:about="rightmprgprecentralgyrusmedialsegment">
-        <rdfs:subClassOf rdf:resource="frontal"/>
+    <Class rdf:about="http://www.w3.org/2002/07/rightmorgmedialorbitalgyrus">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/frontal"/>
     </Class>
     
-
 
-    <!-- rightmsfgsuperiorfrontalgyrusmedialsegment -->
 
+    <!-- http://www.w3.org/2002/07/rightmpogpostcentralgyrusmedialsegment -->
 
-    <Class rdf:about="rightmsfgsuperiorfrontalgyrusmedialsegment">
-        <rdfs:subClassOf rdf:resource="frontal"/>
+    <Class rdf:about="http://www.w3.org/2002/07/rightmpogpostcentralgyrusmedialsegment">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/parietal"/>
     </Class>
     
 
 
-    <!-- rightmtgmiddletemporalgyrus -->
+    <!-- http://www.w3.org/2002/07/rightmprgprecentralgyrusmedialsegment -->
 
-
-    <Class rdf:about="rightmtgmiddletemporalgyrus">
-        <rdfs:subClassOf rdf:resource="temporal"/>
+    <Class rdf:about="http://www.w3.org/2002/07/rightmprgprecentralgyrusmedialsegment">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/frontal"/>
     </Class>
     
-
 
-    <!-- rightocpoccipitalpole -->
 
+    <!-- http://www.w3.org/2002/07/rightmsfgsuperiorfrontalgyrusmedialsegment -->
 
-    <Class rdf:about="rightocpoccipitalpole">
-        <rdfs:subClassOf rdf:resource="occipital"/>
+    <Class rdf:about="http://www.w3.org/2002/07/rightmsfgsuperiorfrontalgyrusmedialsegment">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/frontal"/>
     </Class>
     
 
 
-    <!-- rightofugoccipitalfusiformgyrus -->
+    <!-- http://www.w3.org/2002/07/rightmtgmiddletemporalgyrus -->
 
-
-    <Class rdf:about="rightofugoccipitalfusiformgyrus">
-        <rdfs:subClassOf rdf:resource="occipital"/>
+    <Class rdf:about="http://www.w3.org/2002/07/rightmtgmiddletemporalgyrus">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/temporal"/>
     </Class>
     
-
 
-    <!-- rightopifgopercularpartoftheinferiorfrontalgyrus -->
 
+    <!-- http://www.w3.org/2002/07/rightocpoccipitalpole -->
 
-    <Class rdf:about="rightopifgopercularpartoftheinferiorfrontalgyrus">
-        <rdfs:subClassOf rdf:resource="frontal"/>
+    <Class rdf:about="http://www.w3.org/2002/07/rightocpoccipitalpole">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/occipital"/>
     </Class>
     
 
 
-    <!-- rightorifgorbitalpartoftheinferiorfrontalgyrus -->
+    <!-- http://www.w3.org/2002/07/rightofugoccipitalfusiformgyrus -->
 
-
-    <Class rdf:about="rightorifgorbitalpartoftheinferiorfrontalgyrus">
-        <rdfs:subClassOf rdf:resource="frontal"/>
+    <Class rdf:about="http://www.w3.org/2002/07/rightofugoccipitalfusiformgyrus">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/occipital"/>
     </Class>
     
 
 
-    <!-- rightpallidum -->
+    <!-- http://www.w3.org/2002/07/rightopifgopercularpartoftheinferiorfrontalgyrus -->
 
-
-    <Class rdf:about="rightpallidum">
-        <rdfs:subClassOf rdf:resource="basal_ganglia"/>
+    <Class rdf:about="http://www.w3.org/2002/07/rightopifgopercularpartoftheinferiorfrontalgyrus">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/frontal"/>
     </Class>
     
-
 
-    <!-- rightpcggposteriorcingulategyrus -->
 
+    <!-- http://www.w3.org/2002/07/rightorifgorbitalpartoftheinferiorfrontalgyrus -->
 
-    <Class rdf:about="rightpcggposteriorcingulategyrus">
-        <rdfs:subClassOf rdf:resource="limbic"/>
+    <Class rdf:about="http://www.w3.org/2002/07/rightorifgorbitalpartoftheinferiorfrontalgyrus">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/frontal"/>
     </Class>
     
 
 
-    <!-- rightpcuprecuneus -->
+    <!-- http://www.w3.org/2002/07/rightpallidum -->
 
-
-    <Class rdf:about="rightpcuprecuneus">
-        <rdfs:subClassOf rdf:resource="parietal"/>
+    <Class rdf:about="http://www.w3.org/2002/07/rightpallidum">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/basal_ganglia"/>
     </Class>
     
 
 
-    <!-- rightphgparahippocampalgyrus -->
+    <!-- http://www.w3.org/2002/07/rightpcggposteriorcingulategyrus -->
 
-
-    <Class rdf:about="rightphgparahippocampalgyrus">
-        <rdfs:subClassOf rdf:resource="limbic"/>
+    <Class rdf:about="http://www.w3.org/2002/07/rightpcggposteriorcingulategyrus">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/limbic"/>
     </Class>
     
-
 
-    <!-- rightpinsposteriorinsula -->
 
+    <!-- http://www.w3.org/2002/07/rightpcuprecuneus -->
 
-    <Class rdf:about="rightpinsposteriorinsula">
-        <rdfs:subClassOf rdf:resource="insula"/>
+    <Class rdf:about="http://www.w3.org/2002/07/rightpcuprecuneus">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/parietal"/>
     </Class>
     
 
 
-    <!-- rightpogpostcentralgyrus -->
+    <!-- http://www.w3.org/2002/07/rightphgparahippocampalgyrus -->
 
-
-    <Class rdf:about="rightpogpostcentralgyrus">
-        <rdfs:subClassOf rdf:resource="parietal"/>
+    <Class rdf:about="http://www.w3.org/2002/07/rightphgparahippocampalgyrus">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/limbic"/>
     </Class>
     
 
 
-    <!-- rightpoparietaloperculum -->
+    <!-- http://www.w3.org/2002/07/rightpinsposteriorinsula -->
 
-
-    <Class rdf:about="rightpoparietaloperculum">
-        <rdfs:subClassOf rdf:resource="frontal"/>
+    <Class rdf:about="http://www.w3.org/2002/07/rightpinsposteriorinsula">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/insula"/>
     </Class>
     
-
 
-    <!-- rightporgposteriororbitalgyrus -->
 
+    <!-- http://www.w3.org/2002/07/rightpogpostcentralgyrus -->
 
-    <Class rdf:about="rightporgposteriororbitalgyrus">
-        <rdfs:subClassOf rdf:resource="frontal"/>
+    <Class rdf:about="http://www.w3.org/2002/07/rightpogpostcentralgyrus">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/parietal"/>
     </Class>
     
 
 
-    <!-- rightppplanumpolare -->
+    <!-- http://www.w3.org/2002/07/rightpoparietaloperculum -->
 
-
-    <Class rdf:about="rightppplanumpolare">
-        <rdfs:subClassOf rdf:resource="temporal"/>
+    <Class rdf:about="http://www.w3.org/2002/07/rightpoparietaloperculum">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/frontal"/>
     </Class>
     
 
 
-    <!-- rightprgprecentralgyrus -->
+    <!-- http://www.w3.org/2002/07/rightporgposteriororbitalgyrus -->
 
-
-    <Class rdf:about="rightprgprecentralgyrus">
-        <rdfs:subClassOf rdf:resource="frontal"/>
+    <Class rdf:about="http://www.w3.org/2002/07/rightporgposteriororbitalgyrus">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/frontal"/>
     </Class>
     
-
 
-    <!-- rightptplanumtemporale -->
 
+    <!-- http://www.w3.org/2002/07/rightppplanumpolare -->
 
-    <Class rdf:about="rightptplanumtemporale">
-        <rdfs:subClassOf rdf:resource="temporal"/>
+    <Class rdf:about="http://www.w3.org/2002/07/rightppplanumpolare">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/temporal"/>
     </Class>
     
 
 
-    <!-- rightputamen -->
+    <!-- http://www.w3.org/2002/07/rightprgprecentralgyrus -->
 
-
-    <Class rdf:about="rightputamen">
-        <rdfs:subClassOf rdf:resource="basal_ganglia"/>
+    <Class rdf:about="http://www.w3.org/2002/07/rightprgprecentralgyrus">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/frontal"/>
     </Class>
     
 
 
-    <!-- rightscasubcallosalarea -->
+    <!-- http://www.w3.org/2002/07/rightptplanumtemporale -->
 
-
-    <Class rdf:about="rightscasubcallosalarea">
-        <rdfs:subClassOf rdf:resource="frontal"/>
+    <Class rdf:about="http://www.w3.org/2002/07/rightptplanumtemporale">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/temporal"/>
     </Class>
     
-
 
-    <!-- rightsfgsuperiorfrontalgyrus -->
 
+    <!-- http://www.w3.org/2002/07/rightputamen -->
 
-    <Class rdf:about="rightsfgsuperiorfrontalgyrus">
-        <rdfs:subClassOf rdf:resource="frontal"/>
+    <Class rdf:about="http://www.w3.org/2002/07/rightputamen">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/basal_ganglia"/>
     </Class>
     
 
 
-    <!-- rightsmcsupplementarymotorcortex -->
+    <!-- http://www.w3.org/2002/07/rightscasubcallosalarea -->
 
-
-    <Class rdf:about="rightsmcsupplementarymotorcortex">
-        <rdfs:subClassOf rdf:resource="frontal"/>
+    <Class rdf:about="http://www.w3.org/2002/07/rightscasubcallosalarea">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/frontal"/>
     </Class>
     
 
 
-    <!-- rightsmgsupramarginalgyrus -->
+    <!-- http://www.w3.org/2002/07/rightsfgsuperiorfrontalgyrus -->
 
-
-    <Class rdf:about="rightsmgsupramarginalgyrus">
-        <rdfs:subClassOf rdf:resource="parietal"/>
+    <Class rdf:about="http://www.w3.org/2002/07/rightsfgsuperiorfrontalgyrus">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/frontal"/>
     </Class>
     
-
 
-    <!-- rightsogsuperioroccipitalgyrus -->
 
+    <!-- http://www.w3.org/2002/07/rightsmcsupplementarymotorcortex -->
 
-    <Class rdf:about="rightsogsuperioroccipitalgyrus">
-        <rdfs:subClassOf rdf:resource="occipital"/>
+    <Class rdf:about="http://www.w3.org/2002/07/rightsmcsupplementarymotorcortex">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/frontal"/>
     </Class>
     
 
 
-    <!-- rightsplsuperiorparietallobule -->
+    <!-- http://www.w3.org/2002/07/rightsmgsupramarginalgyrus -->
 
-
-    <Class rdf:about="rightsplsuperiorparietallobule">
-        <rdfs:subClassOf rdf:resource="parietal"/>
+    <Class rdf:about="http://www.w3.org/2002/07/rightsmgsupramarginalgyrus">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/parietal"/>
     </Class>
     
 
 
-    <!-- rightstgsuperiortemporalgyrus -->
+    <!-- http://www.w3.org/2002/07/rightsogsuperioroccipitalgyrus -->
 
-
-    <Class rdf:about="rightstgsuperiortemporalgyrus">
-        <rdfs:subClassOf rdf:resource="temporal"/>
+    <Class rdf:about="http://www.w3.org/2002/07/rightsogsuperioroccipitalgyrus">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/occipital"/>
     </Class>
     
-
 
-    <!-- rightthalamusproper -->
 
+    <!-- http://www.w3.org/2002/07/rightsplsuperiorparietallobule -->
 
-    <Class rdf:about="rightthalamusproper">
-        <rdfs:subClassOf rdf:resource="limbic"/>
+    <Class rdf:about="http://www.w3.org/2002/07/rightsplsuperiorparietallobule">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/parietal"/>
     </Class>
     
 
 
-    <!-- righttmptemporalpole -->
+    <!-- http://www.w3.org/2002/07/rightstgsuperiortemporalgyrus -->
 
-
-    <Class rdf:about="righttmptemporalpole">
-        <rdfs:subClassOf rdf:resource="temporal"/>
+    <Class rdf:about="http://www.w3.org/2002/07/rightstgsuperiortemporalgyrus">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/temporal"/>
     </Class>
     
-
 
-    <!-- righttrifgtriangularpartoftheinferiorfrontalgyrus -->
 
+    <!-- http://www.w3.org/2002/07/rightthalamusproper -->
 
-    <Class rdf:about="righttrifgtriangularpartoftheinferiorfrontalgyrus">
-        <rdfs:subClassOf rdf:resource="frontal"/>
+    <Class rdf:about="http://www.w3.org/2002/07/rightthalamusproper">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/limbic"/>
     </Class>
     
 
 
-    <!-- rightttgtransversetemporalgyrus -->
+    <!-- http://www.w3.org/2002/07/righttmptemporalpole -->
 
-
-    <Class rdf:about="rightttgtransversetemporalgyrus">
-        <rdfs:subClassOf rdf:resource="temporal"/>
+    <Class rdf:about="http://www.w3.org/2002/07/righttmptemporalpole">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/temporal"/>
     </Class>
     
-
 
-    <!-- rightventraldc -->
 
+    <!-- http://www.w3.org/2002/07/righttrifgtriangularpartoftheinferiorfrontalgyrus -->
 
-    <Class rdf:about="rightventraldc">
-        <rdfs:subClassOf rdf:resource="diencephalon"/>
+    <Class rdf:about="http://www.w3.org/2002/07/righttrifgtriangularpartoftheinferiorfrontalgyrus">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/frontal"/>
     </Class>
     
 
 
-    <!-- root -->
+    <!-- http://www.w3.org/2002/07/rightttgtransversetemporalgyrus -->
 
-
-    <Class rdf:about="root">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <Class rdf:about="http://www.w3.org/2002/07/rightttgtransversetemporalgyrus">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/temporal"/>
     </Class>
     
 
 
-    <!-- rs10498633_t -->
+    <!-- http://www.w3.org/2002/07/rightventraldc -->
 
-
-    <Class rdf:about="rs10498633_t">
-        <rdfs:subClassOf rdf:resource="polymorphism"/>
+    <Class rdf:about="http://www.w3.org/2002/07/rightventraldc">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/diencephalon"/>
     </Class>
     
-
 
-    <!-- rs11136000_t -->
 
+    <!-- http://www.w3.org/2002/07/root -->
 
-    <Class rdf:about="rs11136000_t">
-        <rdfs:subClassOf rdf:resource="polymorphism"/>
+    <Class rdf:about="http://www.w3.org/2002/07/root">
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
     </Class>
     
 
 
-    <!-- rs11767557_c -->
+    <!-- http://www.w3.org/2002/07/rs10498633_t -->
 
-
-    <Class rdf:about="rs11767557_c">
-        <rdfs:subClassOf rdf:resource="polymorphism"/>
+    <Class rdf:about="http://www.w3.org/2002/07/rs10498633_t">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/polymorphism"/>
     </Class>
     
 
 
-    <!-- rs1476679_c -->
+    <!-- http://www.w3.org/2002/07/rs11136000_t -->
 
-
-    <Class rdf:about="rs1476679_c">
-        <rdfs:subClassOf rdf:resource="polymorphism"/>
+    <Class rdf:about="http://www.w3.org/2002/07/rs11136000_t">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/polymorphism"/>
     </Class>
     
-
 
-    <!-- rs17125944_c -->
 
+    <!-- http://www.w3.org/2002/07/rs11767557_c -->
 
-    <Class rdf:about="rs17125944_c">
-        <rdfs:subClassOf rdf:resource="polymorphism"/>
+    <Class rdf:about="http://www.w3.org/2002/07/rs11767557_c">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/polymorphism"/>
     </Class>
     
 
 
-    <!-- rs190982_g -->
+    <!-- http://www.w3.org/2002/07/rs1476679_c -->
 
-
-    <Class rdf:about="rs190982_g">
-        <rdfs:subClassOf rdf:resource="polymorphism"/>
+    <Class rdf:about="http://www.w3.org/2002/07/rs1476679_c">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/polymorphism"/>
     </Class>
     
 
 
-    <!-- rs2718058_g -->
+    <!-- http://www.w3.org/2002/07/rs17125944_c -->
 
-
-    <Class rdf:about="rs2718058_g">
-        <rdfs:subClassOf rdf:resource="polymorphism"/>
+    <Class rdf:about="http://www.w3.org/2002/07/rs17125944_c">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/polymorphism"/>
     </Class>
     
-
 
-    <!-- rs3764650_g -->
 
+    <!-- http://www.w3.org/2002/07/rs190982_g -->
 
-    <Class rdf:about="rs3764650_g">
-        <rdfs:subClassOf rdf:resource="polymorphism"/>
+    <Class rdf:about="http://www.w3.org/2002/07/rs190982_g">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/polymorphism"/>
     </Class>
     
 
 
-    <!-- rs3818361_t -->
+    <!-- http://www.w3.org/2002/07/rs2718058_g -->
 
-
-    <Class rdf:about="rs3818361_t">
-        <rdfs:subClassOf rdf:resource="polymorphism"/>
+    <Class rdf:about="http://www.w3.org/2002/07/rs2718058_g">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/polymorphism"/>
     </Class>
     
 
 
-    <!-- rs3851179_a -->
+    <!-- http://www.w3.org/2002/07/rs3764650_g -->
 
-
-    <Class rdf:about="rs3851179_a">
-        <rdfs:subClassOf rdf:resource="polymorphism"/>
+    <Class rdf:about="http://www.w3.org/2002/07/rs3764650_g">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/polymorphism"/>
     </Class>
     
-
 
-    <!-- rs3865444_t -->
 
+    <!-- http://www.w3.org/2002/07/rs3818361_t -->
 
-    <Class rdf:about="rs3865444_t">
-        <rdfs:subClassOf rdf:resource="polymorphism"/>
+    <Class rdf:about="http://www.w3.org/2002/07/rs3818361_t">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/polymorphism"/>
     </Class>
     
 
 
-    <!-- rs610932_a -->
+    <!-- http://www.w3.org/2002/07/rs3851179_a -->
 
-
-    <Class rdf:about="rs610932_a">
-        <rdfs:subClassOf rdf:resource="polymorphism"/>
+    <Class rdf:about="http://www.w3.org/2002/07/rs3851179_a">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/polymorphism"/>
     </Class>
     
 
 
-    <!-- rs744373_c -->
+    <!-- http://www.w3.org/2002/07/rs3865444_t -->
 
-
-    <Class rdf:about="rs744373_c">
-        <rdfs:subClassOf rdf:resource="polymorphism"/>
+    <Class rdf:about="http://www.w3.org/2002/07/rs3865444_t">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/polymorphism"/>
     </Class>
     
-
 
-    <!-- score -->
 
+    <!-- http://www.w3.org/2002/07/rs610932_a -->
 
-    <Class rdf:about="score">
-        <rdfs:subClassOf rdf:resource="clinical"/>
+    <Class rdf:about="http://www.w3.org/2002/07/rs610932_a">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/polymorphism"/>
     </Class>
     
 
 
-    <!-- subjectage -->
+    <!-- http://www.w3.org/2002/07/rs744373_c -->
 
-
-    <Class rdf:about="subjectage">
-        <rdfs:subClassOf rdf:resource="demographics"/>
+    <Class rdf:about="http://www.w3.org/2002/07/rs744373_c">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/polymorphism"/>
     </Class>
     
 
 
-    <!-- subjectageyears -->
+    <!-- http://www.w3.org/2002/07/score -->
 
-
-    <Class rdf:about="subjectageyears">
-        <rdfs:subClassOf rdf:resource="demographics"/>
+    <Class rdf:about="http://www.w3.org/2002/07/score">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/clinical"/>
     </Class>
     
-
 
-    <!-- temporal -->
 
+    <!-- http://www.w3.org/2002/07/subjectage -->
 
-    <Class rdf:about="temporal">
-        <rdfs:subClassOf rdf:resource="grey_matter_volume"/>
+    <Class rdf:about="http://www.w3.org/2002/07/subjectage">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/demographics"/>
     </Class>
     
 
 
-    <!-- tiv -->
+    <!-- http://www.w3.org/2002/07/subjectageyears -->
 
-
-    <Class rdf:about="tiv">
-        <rdfs:subClassOf rdf:resource="lren_atlas"/>
+    <Class rdf:about="http://www.w3.org/2002/07/subjectageyears">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/demographics"/>
     </Class>
     
 
 
-    <!-- updrs -->
+    <!-- http://www.w3.org/2002/07/temporal -->
 
-
-    <Class rdf:about="updrs">
-        <rdfs:subClassOf rdf:resource="score"/>
+    <Class rdf:about="http://www.w3.org/2002/07/temporal">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/grey_matter_volume"/>
     </Class>
     
-
 
-    <!-- updrshy -->
 
+    <!-- http://www.w3.org/2002/07/tiv -->
 
-    <Class rdf:about="updrshy">
-        <rdfs:subClassOf rdf:resource="updrs"/>
+    <Class rdf:about="http://www.w3.org/2002/07/tiv">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/lren_atlas"/>
     </Class>
     
 
 
-    <!-- updrstotal -->
+    <!-- http://www.w3.org/2002/07/updrs -->
 
-
-    <Class rdf:about="updrstotal">
-        <rdfs:subClassOf rdf:resource="updrs"/>
+    <Class rdf:about="http://www.w3.org/2002/07/updrs">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/score"/>
     </Class>
     
-
 
-    <!-- white_matter_volume -->
 
+    <!-- http://www.w3.org/2002/07/updrshy -->
 
-    <Class rdf:about="white_matter_volume">
-        <rdfs:subClassOf rdf:resource="lren_atlas"/>
+    <Class rdf:about="http://www.w3.org/2002/07/updrshy">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/updrs"/>
     </Class>
     
 
 
-    <!-- 3rdventricle -->
+    <!-- http://www.w3.org/2002/07/updrstotal -->
 
-
-    <Class rdf:about="3rdventricle">
-        <rdfs:subClassOf rdf:resource="csf"/>
+    <Class rdf:about="http://www.w3.org/2002/07/updrstotal">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/updrs"/>
     </Class>
     
-
 
-    <!-- 4thventricle -->
 
+    <!-- http://www.w3.org/2002/07/white_matter_volume -->
 
-    <Class rdf:about="4thventricle">
-        <rdfs:subClassOf rdf:resource="csf"/>
+    <Class rdf:about="http://www.w3.org/2002/07/white_matter_volume">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/lren_atlas"/>
     </Class>
 </rdf:RDF>
 
 
 
-<!-- Generated by the OWL API (version 5.1.0.2017-03-29T23:31:42Z) https://github.com/owlcs/owlapi/ -->
-
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
 
