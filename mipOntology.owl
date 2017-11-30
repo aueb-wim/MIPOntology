@@ -1,0 +1,1810 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <Ontology/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- adnicategory -->
+
+
+    <Class rdf:about="adnicategory">
+        <rdfs:subClassOf rdf:resource="diagnosis"/>
+    </Class>
+    
+
+
+    <!-- agegroup -->
+
+
+    <Class rdf:about="agegroup">
+        <rdfs:subClassOf rdf:resource="demographics"/>
+    </Class>
+    
+
+
+    <!-- alzheimerbroadcategory -->
+
+
+    <Class rdf:about="alzheimerbroadcategory">
+        <rdfs:subClassOf rdf:resource="diagnosis"/>
+    </Class>
+    
+
+
+    <!-- amygdala -->
+
+
+    <Class rdf:about="amygdala">
+        <rdfs:subClassOf rdf:resource="cerebral_nuclei"/>
+    </Class>
+    
+
+
+    <!-- apoe4 -->
+
+
+    <Class rdf:about="apoe4">
+        <rdfs:subClassOf rdf:resource="polymorphism"/>
+    </Class>
+    
+
+
+    <!-- av45 -->
+
+
+    <Class rdf:about="av45">
+        <rdfs:subClassOf rdf:resource="pet"/>
+    </Class>
+    
+
+
+    <!-- basal_ganglia -->
+
+
+    <Class rdf:about="basal_ganglia">
+        <rdfs:subClassOf rdf:resource="cerebral_nuclei"/>
+    </Class>
+    
+
+
+    <!-- brain -->
+
+
+    <Class rdf:about="brain">
+        <rdfs:subClassOf rdf:resource="root"/>
+    </Class>
+    
+
+
+    <!-- brain_anatomy -->
+
+
+    <Class rdf:about="brain_anatomy">
+        <rdfs:subClassOf rdf:resource="brain"/>
+    </Class>
+    
+
+
+    <!-- brain_metabolism -->
+
+
+    <Class rdf:about="brain_metabolism">
+        <rdfs:subClassOf rdf:resource="root"/>
+    </Class>
+    
+
+
+    <!-- brainstem -->
+
+
+    <Class rdf:about="brainstem">
+        <rdfs:subClassOf rdf:resource="lren_atlas"/>
+    </Class>
+    
+
+
+    <!-- cerebellarvermallobulesiv -->
+
+
+    <Class rdf:about="cerebellarvermallobulesiv">
+        <rdfs:subClassOf rdf:resource="cerebellum"/>
+    </Class>
+    
+
+
+    <!-- cerebellarvermallobulesviiix -->
+
+
+    <Class rdf:about="cerebellarvermallobulesviiix">
+        <rdfs:subClassOf rdf:resource="cerebellum"/>
+    </Class>
+    
+
+
+    <!-- cerebellarvermallobulesvivii -->
+
+
+    <Class rdf:about="cerebellarvermallobulesvivii">
+        <rdfs:subClassOf rdf:resource="cerebellum"/>
+    </Class>
+    
+
+
+    <!-- cerebellum -->
+
+
+    <Class rdf:about="cerebellum">
+        <rdfs:subClassOf rdf:resource="grey_matter_volume"/>
+    </Class>
+    
+
+
+    <!-- cerebral_nuclei -->
+
+
+    <Class rdf:about="cerebral_nuclei">
+        <rdfs:subClassOf rdf:resource="grey_matter_volume"/>
+    </Class>
+    
+
+
+    <!-- clinical -->
+
+
+    <Class rdf:about="clinical">
+        <rdfs:subClassOf rdf:resource="root"/>
+    </Class>
+    
+
+
+    <!-- csf -->
+
+
+    <Class rdf:about="csf">
+        <rdfs:subClassOf rdf:resource="lren_atlas"/>
+    </Class>
+    
+
+
+    <!-- csfglobal -->
+
+
+    <Class rdf:about="csfglobal">
+        <rdfs:subClassOf rdf:resource="csf"/>
+    </Class>
+    
+
+
+    <!-- dataset -->
+
+
+    <Class rdf:about="dataset">
+        <rdfs:subClassOf rdf:resource="provenance"/>
+    </Class>
+    
+
+
+    <!-- demographics -->
+
+
+    <Class rdf:about="demographics">
+        <rdfs:subClassOf rdf:resource="root"/>
+    </Class>
+    
+
+
+    <!-- diagnosis -->
+
+
+    <Class rdf:about="diagnosis">
+        <rdfs:subClassOf rdf:resource="score"/>
+    </Class>
+    
+
+
+    <!-- diencephalon -->
+
+
+    <Class rdf:about="diencephalon">
+        <rdfs:subClassOf rdf:resource="grey_matter_volume"/>
+    </Class>
+    
+
+
+    <!-- edsdcategory -->
+
+
+    <Class rdf:about="edsdcategory">
+        <rdfs:subClassOf rdf:resource="diagnosis"/>
+    </Class>
+    
+
+
+    <!-- fdg -->
+
+
+    <Class rdf:about="fdg">
+        <rdfs:subClassOf rdf:resource="pet"/>
+    </Class>
+    
+
+
+    <!-- frontal -->
+
+
+    <Class rdf:about="frontal">
+        <rdfs:subClassOf rdf:resource="grey_matter_volume"/>
+    </Class>
+    
+
+
+    <!-- gender -->
+
+
+    <Class rdf:about="gender">
+        <rdfs:subClassOf rdf:resource="demographics"/>
+    </Class>
+    
+
+
+    <!-- genetic -->
+
+
+    <Class rdf:about="genetic">
+        <rdfs:subClassOf rdf:resource="root"/>
+    </Class>
+    
+
+
+    <!-- grey_matter_volume -->
+
+
+    <Class rdf:about="grey_matter_volume">
+        <rdfs:subClassOf rdf:resource="lren_atlas"/>
+    </Class>
+    
+
+
+    <!-- handedness -->
+
+
+    <Class rdf:about="handedness">
+        <rdfs:subClassOf rdf:resource="demographics"/>
+    </Class>
+    
+
+
+    <!-- insula -->
+
+
+    <Class rdf:about="insula">
+        <rdfs:subClassOf rdf:resource="grey_matter_volume"/>
+    </Class>
+    
+
+
+    <!-- leftaccumbensarea -->
+
+
+    <Class rdf:about="leftaccumbensarea">
+        <rdfs:subClassOf rdf:resource="basal_ganglia"/>
+    </Class>
+    
+
+
+    <!-- leftacgganteriorcingulategyrus -->
+
+
+    <Class rdf:about="leftacgganteriorcingulategyrus">
+        <rdfs:subClassOf rdf:resource="limbic"/>
+    </Class>
+    
+
+
+    <!-- leftainsanteriorinsula -->
+
+
+    <Class rdf:about="leftainsanteriorinsula">
+        <rdfs:subClassOf rdf:resource="insula"/>
+    </Class>
+    
+
+
+    <!-- leftamygdala -->
+
+
+    <Class rdf:about="leftamygdala">
+        <rdfs:subClassOf rdf:resource="amygdala"/>
+    </Class>
+    
+
+
+    <!-- leftangangulargyrus -->
+
+
+    <Class rdf:about="leftangangulargyrus">
+        <rdfs:subClassOf rdf:resource="parietal"/>
+    </Class>
+    
+
+
+    <!-- leftaorganteriororbitalgyrus -->
+
+
+    <Class rdf:about="leftaorganteriororbitalgyrus">
+        <rdfs:subClassOf rdf:resource="frontal"/>
+    </Class>
+    
+
+
+    <!-- leftbasalforebrain -->
+
+
+    <Class rdf:about="leftbasalforebrain">
+        <rdfs:subClassOf rdf:resource="basal_ganglia"/>
+    </Class>
+    
+
+
+    <!-- leftcalccalcarinecortex -->
+
+
+    <Class rdf:about="leftcalccalcarinecortex">
+        <rdfs:subClassOf rdf:resource="occipital"/>
+    </Class>
+    
+
+
+    <!-- leftcaudate -->
+
+
+    <Class rdf:about="leftcaudate">
+        <rdfs:subClassOf rdf:resource="basal_ganglia"/>
+    </Class>
+    
+
+
+    <!-- leftcerebellumexterior -->
+
+
+    <Class rdf:about="leftcerebellumexterior">
+        <rdfs:subClassOf rdf:resource="cerebellum"/>
+    </Class>
+    
+
+
+    <!-- leftcerebellumwhitematter -->
+
+
+    <Class rdf:about="leftcerebellumwhitematter">
+        <rdfs:subClassOf rdf:resource="white_matter_volume"/>
+    </Class>
+    
+
+
+    <!-- leftcerebralwhitematter -->
+
+
+    <Class rdf:about="leftcerebralwhitematter">
+        <rdfs:subClassOf rdf:resource="white_matter_volume"/>
+    </Class>
+    
+
+
+    <!-- leftcocentraloperculum -->
+
+
+    <Class rdf:about="leftcocentraloperculum">
+        <rdfs:subClassOf rdf:resource="frontal"/>
+    </Class>
+    
+
+
+    <!-- leftcuncuneus -->
+
+
+    <Class rdf:about="leftcuncuneus">
+        <rdfs:subClassOf rdf:resource="occipital"/>
+    </Class>
+    
+
+
+    <!-- leftententorhinalarea -->
+
+
+    <Class rdf:about="leftententorhinalarea">
+        <rdfs:subClassOf rdf:resource="limbic"/>
+    </Class>
+    
+
+
+    <!-- leftfofrontaloperculum -->
+
+
+    <Class rdf:about="leftfofrontaloperculum">
+        <rdfs:subClassOf rdf:resource="frontal"/>
+    </Class>
+    
+
+
+    <!-- leftfrpfrontalpole -->
+
+
+    <Class rdf:about="leftfrpfrontalpole">
+        <rdfs:subClassOf rdf:resource="frontal"/>
+    </Class>
+    
+
+
+    <!-- leftfugfusiformgyrus -->
+
+
+    <Class rdf:about="leftfugfusiformgyrus">
+        <rdfs:subClassOf rdf:resource="temporal"/>
+    </Class>
+    
+
+
+    <!-- leftgregyrusrectus -->
+
+
+    <Class rdf:about="leftgregyrusrectus">
+        <rdfs:subClassOf rdf:resource="frontal"/>
+    </Class>
+    
+
+
+    <!-- lefthippocampus -->
+
+
+    <Class rdf:about="lefthippocampus">
+        <rdfs:subClassOf rdf:resource="limbic"/>
+    </Class>
+    
+
+
+    <!-- leftinflatvent -->
+
+
+    <Class rdf:about="leftinflatvent">
+        <rdfs:subClassOf rdf:resource="csf"/>
+    </Class>
+    
+
+
+    <!-- leftioginferioroccipitalgyrus -->
+
+
+    <Class rdf:about="leftioginferioroccipitalgyrus">
+        <rdfs:subClassOf rdf:resource="occipital"/>
+    </Class>
+    
+
+
+    <!-- leftitginferiortemporalgyrus -->
+
+
+    <Class rdf:about="leftitginferiortemporalgyrus">
+        <rdfs:subClassOf rdf:resource="temporal"/>
+    </Class>
+    
+
+
+    <!-- leftlateralventricle -->
+
+
+    <Class rdf:about="leftlateralventricle">
+        <rdfs:subClassOf rdf:resource="csf"/>
+    </Class>
+    
+
+
+    <!-- leftliglingualgyrus -->
+
+
+    <Class rdf:about="leftliglingualgyrus">
+        <rdfs:subClassOf rdf:resource="occipital"/>
+    </Class>
+    
+
+
+    <!-- leftlorglateralorbitalgyrus -->
+
+
+    <Class rdf:about="leftlorglateralorbitalgyrus">
+        <rdfs:subClassOf rdf:resource="frontal"/>
+    </Class>
+    
+
+
+    <!-- leftmcggmiddlecingulategyrus -->
+
+
+    <Class rdf:about="leftmcggmiddlecingulategyrus">
+        <rdfs:subClassOf rdf:resource="limbic"/>
+    </Class>
+    
+
+
+    <!-- leftmfcmedialfrontalcortex -->
+
+
+    <Class rdf:about="leftmfcmedialfrontalcortex">
+        <rdfs:subClassOf rdf:resource="frontal"/>
+    </Class>
+    
+
+
+    <!-- leftmfgmiddlefrontalgyrus -->
+
+
+    <Class rdf:about="leftmfgmiddlefrontalgyrus">
+        <rdfs:subClassOf rdf:resource="frontal"/>
+    </Class>
+    
+
+
+    <!-- leftmogmiddleoccipitalgyrus -->
+
+
+    <Class rdf:about="leftmogmiddleoccipitalgyrus">
+        <rdfs:subClassOf rdf:resource="occipital"/>
+    </Class>
+    
+
+
+    <!-- leftmorgmedialorbitalgyrus -->
+
+
+    <Class rdf:about="leftmorgmedialorbitalgyrus">
+        <rdfs:subClassOf rdf:resource="frontal"/>
+    </Class>
+    
+
+
+    <!-- leftmpogpostcentralgyrusmedialsegment -->
+
+
+    <Class rdf:about="leftmpogpostcentralgyrusmedialsegment">
+        <rdfs:subClassOf rdf:resource="parietal"/>
+    </Class>
+    
+
+
+    <!-- leftmprgprecentralgyrusmedialsegment -->
+
+
+    <Class rdf:about="leftmprgprecentralgyrusmedialsegment">
+        <rdfs:subClassOf rdf:resource="frontal"/>
+    </Class>
+    
+
+
+    <!-- leftmsfgsuperiorfrontalgyrusmedialsegment -->
+
+
+    <Class rdf:about="leftmsfgsuperiorfrontalgyrusmedialsegment">
+        <rdfs:subClassOf rdf:resource="frontal"/>
+    </Class>
+    
+
+
+    <!-- leftmtgmiddletemporalgyrus -->
+
+
+    <Class rdf:about="leftmtgmiddletemporalgyrus">
+        <rdfs:subClassOf rdf:resource="temporal"/>
+    </Class>
+    
+
+
+    <!-- leftocpoccipitalpole -->
+
+
+    <Class rdf:about="leftocpoccipitalpole">
+        <rdfs:subClassOf rdf:resource="occipital"/>
+    </Class>
+    
+
+
+    <!-- leftofugoccipitalfusiformgyrus -->
+
+
+    <Class rdf:about="leftofugoccipitalfusiformgyrus">
+        <rdfs:subClassOf rdf:resource="occipital"/>
+    </Class>
+    
+
+
+    <!-- leftopifgopercularpartoftheinferiorfrontalgyrus -->
+
+
+    <Class rdf:about="leftopifgopercularpartoftheinferiorfrontalgyrus">
+        <rdfs:subClassOf rdf:resource="frontal"/>
+    </Class>
+    
+
+
+    <!-- leftorifgorbitalpartoftheinferiorfrontalgyrus -->
+
+
+    <Class rdf:about="leftorifgorbitalpartoftheinferiorfrontalgyrus">
+        <rdfs:subClassOf rdf:resource="frontal"/>
+    </Class>
+    
+
+
+    <!-- leftpallidum -->
+
+
+    <Class rdf:about="leftpallidum">
+        <rdfs:subClassOf rdf:resource="basal_ganglia"/>
+    </Class>
+    
+
+
+    <!-- leftpcggposteriorcingulategyrus -->
+
+
+    <Class rdf:about="leftpcggposteriorcingulategyrus">
+        <rdfs:subClassOf rdf:resource="limbic"/>
+    </Class>
+    
+
+
+    <!-- leftpcuprecuneus -->
+
+
+    <Class rdf:about="leftpcuprecuneus">
+        <rdfs:subClassOf rdf:resource="parietal"/>
+    </Class>
+    
+
+
+    <!-- leftphgparahippocampalgyrus -->
+
+
+    <Class rdf:about="leftphgparahippocampalgyrus">
+        <rdfs:subClassOf rdf:resource="limbic"/>
+    </Class>
+    
+
+
+    <!-- leftpinsposteriorinsula -->
+
+
+    <Class rdf:about="leftpinsposteriorinsula">
+        <rdfs:subClassOf rdf:resource="insula"/>
+    </Class>
+    
+
+
+    <!-- leftpogpostcentralgyrus -->
+
+
+    <Class rdf:about="leftpogpostcentralgyrus">
+        <rdfs:subClassOf rdf:resource="parietal"/>
+    </Class>
+    
+
+
+    <!-- leftpoparietaloperculum -->
+
+
+    <Class rdf:about="leftpoparietaloperculum">
+        <rdfs:subClassOf rdf:resource="frontal"/>
+    </Class>
+    
+
+
+    <!-- leftporgposteriororbitalgyrus -->
+
+
+    <Class rdf:about="leftporgposteriororbitalgyrus">
+        <rdfs:subClassOf rdf:resource="frontal"/>
+    </Class>
+    
+
+
+    <!-- leftppplanumpolare -->
+
+
+    <Class rdf:about="leftppplanumpolare">
+        <rdfs:subClassOf rdf:resource="temporal"/>
+    </Class>
+    
+
+
+    <!-- leftprgprecentralgyrus -->
+
+
+    <Class rdf:about="leftprgprecentralgyrus">
+        <rdfs:subClassOf rdf:resource="frontal"/>
+    </Class>
+    
+
+
+    <!-- leftptplanumtemporale -->
+
+
+    <Class rdf:about="leftptplanumtemporale">
+        <rdfs:subClassOf rdf:resource="temporal"/>
+    </Class>
+    
+
+
+    <!-- leftputamen -->
+
+
+    <Class rdf:about="leftputamen">
+        <rdfs:subClassOf rdf:resource="basal_ganglia"/>
+    </Class>
+    
+
+
+    <!-- leftscasubcallosalarea -->
+
+
+    <Class rdf:about="leftscasubcallosalarea">
+        <rdfs:subClassOf rdf:resource="frontal"/>
+    </Class>
+    
+
+
+    <!-- leftsfgsuperiorfrontalgyrus -->
+
+
+    <Class rdf:about="leftsfgsuperiorfrontalgyrus">
+        <rdfs:subClassOf rdf:resource="frontal"/>
+    </Class>
+    
+
+
+    <!-- leftsmcsupplementarymotorcortex -->
+
+
+    <Class rdf:about="leftsmcsupplementarymotorcortex">
+        <rdfs:subClassOf rdf:resource="frontal"/>
+    </Class>
+    
+
+
+    <!-- leftsmgsupramarginalgyrus -->
+
+
+    <Class rdf:about="leftsmgsupramarginalgyrus">
+        <rdfs:subClassOf rdf:resource="parietal"/>
+    </Class>
+    
+
+
+    <!-- leftsogsuperioroccipitalgyrus -->
+
+
+    <Class rdf:about="leftsogsuperioroccipitalgyrus">
+        <rdfs:subClassOf rdf:resource="occipital"/>
+    </Class>
+    
+
+
+    <!-- leftsplsuperiorparietallobule -->
+
+
+    <Class rdf:about="leftsplsuperiorparietallobule">
+        <rdfs:subClassOf rdf:resource="parietal"/>
+    </Class>
+    
+
+
+    <!-- leftstgsuperiortemporalgyrus -->
+
+
+    <Class rdf:about="leftstgsuperiortemporalgyrus">
+        <rdfs:subClassOf rdf:resource="temporal"/>
+    </Class>
+    
+
+
+    <!-- leftthalamusproper -->
+
+
+    <Class rdf:about="leftthalamusproper">
+        <rdfs:subClassOf rdf:resource="limbic"/>
+    </Class>
+    
+
+
+    <!-- lefttmptemporalpole -->
+
+
+    <Class rdf:about="lefttmptemporalpole">
+        <rdfs:subClassOf rdf:resource="temporal"/>
+    </Class>
+    
+
+
+    <!-- lefttrifgtriangularpartoftheinferiorfrontalgyrus -->
+
+
+    <Class rdf:about="lefttrifgtriangularpartoftheinferiorfrontalgyrus">
+        <rdfs:subClassOf rdf:resource="frontal"/>
+    </Class>
+    
+
+
+    <!-- leftttgtransversetemporalgyrus -->
+
+
+    <Class rdf:about="leftttgtransversetemporalgyrus">
+        <rdfs:subClassOf rdf:resource="temporal"/>
+    </Class>
+    
+
+
+    <!-- leftventraldc -->
+
+
+    <Class rdf:about="leftventraldc">
+        <rdfs:subClassOf rdf:resource="diencephalon"/>
+    </Class>
+    
+
+
+    <!-- limbic -->
+
+
+    <Class rdf:about="limbic">
+        <rdfs:subClassOf rdf:resource="grey_matter_volume"/>
+    </Class>
+    
+
+
+    <!-- lren_atlas -->
+
+
+    <Class rdf:about="lren_atlas">
+        <rdfs:subClassOf rdf:resource="brain_anatomy"/>
+    </Class>
+    
+
+
+    <!-- minimentalstate -->
+
+
+    <Class rdf:about="minimentalstate">
+        <rdfs:subClassOf rdf:resource="mmse"/>
+    </Class>
+    
+
+
+    <!-- mmse -->
+
+
+    <Class rdf:about="mmse">
+        <rdfs:subClassOf rdf:resource="score"/>
+    </Class>
+    
+
+
+    <!-- moca -->
+
+
+    <Class rdf:about="moca">
+        <rdfs:subClassOf rdf:resource="score"/>
+    </Class>
+    
+
+
+    <!-- montrealcognitiveassessment -->
+
+
+    <Class rdf:about="montrealcognitiveassessment">
+        <rdfs:subClassOf rdf:resource="moca"/>
+    </Class>
+    
+
+
+    <!-- neurogenerativescategories -->
+
+
+    <Class rdf:about="neurogenerativescategories">
+        <rdfs:subClassOf rdf:resource="diagnosis"/>
+    </Class>
+    
+
+
+    <!-- occipital -->
+
+
+    <Class rdf:about="occipital">
+        <rdfs:subClassOf rdf:resource="grey_matter_volume"/>
+    </Class>
+    
+
+
+    <!-- opticchiasm -->
+
+
+    <Class rdf:about="opticchiasm">
+        <rdfs:subClassOf rdf:resource="white_matter_volume"/>
+    </Class>
+    
+
+
+    <!-- parietal -->
+
+
+    <Class rdf:about="parietal">
+        <rdfs:subClassOf rdf:resource="grey_matter_volume"/>
+    </Class>
+    
+
+
+    <!-- parkinsonbroadcategory -->
+
+
+    <Class rdf:about="parkinsonbroadcategory">
+        <rdfs:subClassOf rdf:resource="diagnosis"/>
+    </Class>
+    
+
+
+    <!-- pet -->
+
+
+    <Class rdf:about="pet">
+        <rdfs:subClassOf rdf:resource="brain_metabolism"/>
+    </Class>
+    
+
+
+    <!-- pib -->
+
+
+    <Class rdf:about="pib">
+        <rdfs:subClassOf rdf:resource="pet"/>
+    </Class>
+    
+
+
+    <!-- polymorphism -->
+
+
+    <Class rdf:about="polymorphism">
+        <rdfs:subClassOf rdf:resource="genetic"/>
+    </Class>
+    
+
+
+    <!-- ppmicategory -->
+
+
+    <Class rdf:about="ppmicategory">
+        <rdfs:subClassOf rdf:resource="diagnosis"/>
+    </Class>
+    
+
+
+    <!-- provenance -->
+
+
+    <Class rdf:about="provenance">
+        <rdfs:subClassOf rdf:resource="root"/>
+    </Class>
+    
+
+
+    <!-- rightaccumbensarea -->
+
+
+    <Class rdf:about="rightaccumbensarea">
+        <rdfs:subClassOf rdf:resource="basal_ganglia"/>
+    </Class>
+    
+
+
+    <!-- rightacgganteriorcingulategyrus -->
+
+
+    <Class rdf:about="rightacgganteriorcingulategyrus">
+        <rdfs:subClassOf rdf:resource="limbic"/>
+    </Class>
+    
+
+
+    <!-- rightainsanteriorinsula -->
+
+
+    <Class rdf:about="rightainsanteriorinsula">
+        <rdfs:subClassOf rdf:resource="insula"/>
+    </Class>
+    
+
+
+    <!-- rightamygdala -->
+
+
+    <Class rdf:about="rightamygdala">
+        <rdfs:subClassOf rdf:resource="amygdala"/>
+    </Class>
+    
+
+
+    <!-- rightangangulargyrus -->
+
+
+    <Class rdf:about="rightangangulargyrus">
+        <rdfs:subClassOf rdf:resource="parietal"/>
+    </Class>
+    
+
+
+    <!-- rightaorganteriororbitalgyrus -->
+
+
+    <Class rdf:about="rightaorganteriororbitalgyrus">
+        <rdfs:subClassOf rdf:resource="frontal"/>
+    </Class>
+    
+
+
+    <!-- rightbasalforebrain -->
+
+
+    <Class rdf:about="rightbasalforebrain">
+        <rdfs:subClassOf rdf:resource="basal_ganglia"/>
+    </Class>
+    
+
+
+    <!-- rightcalccalcarinecortex -->
+
+
+    <Class rdf:about="rightcalccalcarinecortex">
+        <rdfs:subClassOf rdf:resource="occipital"/>
+    </Class>
+    
+
+
+    <!-- rightcaudate -->
+
+
+    <Class rdf:about="rightcaudate">
+        <rdfs:subClassOf rdf:resource="basal_ganglia"/>
+    </Class>
+    
+
+
+    <!-- rightcerebellumexterior -->
+
+
+    <Class rdf:about="rightcerebellumexterior">
+        <rdfs:subClassOf rdf:resource="cerebellum"/>
+    </Class>
+    
+
+
+    <!-- rightcerebellumwhitematter -->
+
+
+    <Class rdf:about="rightcerebellumwhitematter">
+        <rdfs:subClassOf rdf:resource="white_matter_volume"/>
+    </Class>
+    
+
+
+    <!-- rightcerebralwhitematter -->
+
+
+    <Class rdf:about="rightcerebralwhitematter">
+        <rdfs:subClassOf rdf:resource="white_matter_volume"/>
+    </Class>
+    
+
+
+    <!-- rightcocentraloperculum -->
+
+
+    <Class rdf:about="rightcocentraloperculum">
+        <rdfs:subClassOf rdf:resource="frontal"/>
+    </Class>
+    
+
+
+    <!-- rightcuncuneus -->
+
+
+    <Class rdf:about="rightcuncuneus">
+        <rdfs:subClassOf rdf:resource="occipital"/>
+    </Class>
+    
+
+
+    <!-- rightententorhinalarea -->
+
+
+    <Class rdf:about="rightententorhinalarea">
+        <rdfs:subClassOf rdf:resource="limbic"/>
+    </Class>
+    
+
+
+    <!-- rightfofrontaloperculum -->
+
+
+    <Class rdf:about="rightfofrontaloperculum">
+        <rdfs:subClassOf rdf:resource="frontal"/>
+    </Class>
+    
+
+
+    <!-- rightfrpfrontalpole -->
+
+
+    <Class rdf:about="rightfrpfrontalpole">
+        <rdfs:subClassOf rdf:resource="frontal"/>
+    </Class>
+    
+
+
+    <!-- rightfugfusiformgyrus -->
+
+
+    <Class rdf:about="rightfugfusiformgyrus">
+        <rdfs:subClassOf rdf:resource="temporal"/>
+    </Class>
+    
+
+
+    <!-- rightgregyrusrectus -->
+
+
+    <Class rdf:about="rightgregyrusrectus">
+        <rdfs:subClassOf rdf:resource="frontal"/>
+    </Class>
+    
+
+
+    <!-- righthippocampus -->
+
+
+    <Class rdf:about="righthippocampus">
+        <rdfs:subClassOf rdf:resource="limbic"/>
+    </Class>
+    
+
+
+    <!-- rightinflatvent -->
+
+
+    <Class rdf:about="rightinflatvent">
+        <rdfs:subClassOf rdf:resource="csf"/>
+    </Class>
+    
+
+
+    <!-- rightioginferioroccipitalgyrus -->
+
+
+    <Class rdf:about="rightioginferioroccipitalgyrus">
+        <rdfs:subClassOf rdf:resource="occipital"/>
+    </Class>
+    
+
+
+    <!-- rightitginferiortemporalgyrus -->
+
+
+    <Class rdf:about="rightitginferiortemporalgyrus">
+        <rdfs:subClassOf rdf:resource="temporal"/>
+    </Class>
+    
+
+
+    <!-- rightlateralventricle -->
+
+
+    <Class rdf:about="rightlateralventricle">
+        <rdfs:subClassOf rdf:resource="csf"/>
+    </Class>
+    
+
+
+    <!-- rightliglingualgyrus -->
+
+
+    <Class rdf:about="rightliglingualgyrus">
+        <rdfs:subClassOf rdf:resource="occipital"/>
+    </Class>
+    
+
+
+    <!-- rightlorglateralorbitalgyrus -->
+
+
+    <Class rdf:about="rightlorglateralorbitalgyrus">
+        <rdfs:subClassOf rdf:resource="frontal"/>
+    </Class>
+    
+
+
+    <!-- rightmcggmiddlecingulategyrus -->
+
+
+    <Class rdf:about="rightmcggmiddlecingulategyrus">
+        <rdfs:subClassOf rdf:resource="limbic"/>
+    </Class>
+    
+
+
+    <!-- rightmfcmedialfrontalcortex -->
+
+
+    <Class rdf:about="rightmfcmedialfrontalcortex">
+        <rdfs:subClassOf rdf:resource="frontal"/>
+    </Class>
+    
+
+
+    <!-- rightmfgmiddlefrontalgyrus -->
+
+
+    <Class rdf:about="rightmfgmiddlefrontalgyrus">
+        <rdfs:subClassOf rdf:resource="frontal"/>
+    </Class>
+    
+
+
+    <!-- rightmogmiddleoccipitalgyrus -->
+
+
+    <Class rdf:about="rightmogmiddleoccipitalgyrus">
+        <rdfs:subClassOf rdf:resource="occipital"/>
+    </Class>
+    
+
+
+    <!-- rightmorgmedialorbitalgyrus -->
+
+
+    <Class rdf:about="rightmorgmedialorbitalgyrus">
+        <rdfs:subClassOf rdf:resource="frontal"/>
+    </Class>
+    
+
+
+    <!-- rightmpogpostcentralgyrusmedialsegment -->
+
+
+    <Class rdf:about="rightmpogpostcentralgyrusmedialsegment">
+        <rdfs:subClassOf rdf:resource="parietal"/>
+    </Class>
+    
+
+
+    <!-- rightmprgprecentralgyrusmedialsegment -->
+
+
+    <Class rdf:about="rightmprgprecentralgyrusmedialsegment">
+        <rdfs:subClassOf rdf:resource="frontal"/>
+    </Class>
+    
+
+
+    <!-- rightmsfgsuperiorfrontalgyrusmedialsegment -->
+
+
+    <Class rdf:about="rightmsfgsuperiorfrontalgyrusmedialsegment">
+        <rdfs:subClassOf rdf:resource="frontal"/>
+    </Class>
+    
+
+
+    <!-- rightmtgmiddletemporalgyrus -->
+
+
+    <Class rdf:about="rightmtgmiddletemporalgyrus">
+        <rdfs:subClassOf rdf:resource="temporal"/>
+    </Class>
+    
+
+
+    <!-- rightocpoccipitalpole -->
+
+
+    <Class rdf:about="rightocpoccipitalpole">
+        <rdfs:subClassOf rdf:resource="occipital"/>
+    </Class>
+    
+
+
+    <!-- rightofugoccipitalfusiformgyrus -->
+
+
+    <Class rdf:about="rightofugoccipitalfusiformgyrus">
+        <rdfs:subClassOf rdf:resource="occipital"/>
+    </Class>
+    
+
+
+    <!-- rightopifgopercularpartoftheinferiorfrontalgyrus -->
+
+
+    <Class rdf:about="rightopifgopercularpartoftheinferiorfrontalgyrus">
+        <rdfs:subClassOf rdf:resource="frontal"/>
+    </Class>
+    
+
+
+    <!-- rightorifgorbitalpartoftheinferiorfrontalgyrus -->
+
+
+    <Class rdf:about="rightorifgorbitalpartoftheinferiorfrontalgyrus">
+        <rdfs:subClassOf rdf:resource="frontal"/>
+    </Class>
+    
+
+
+    <!-- rightpallidum -->
+
+
+    <Class rdf:about="rightpallidum">
+        <rdfs:subClassOf rdf:resource="basal_ganglia"/>
+    </Class>
+    
+
+
+    <!-- rightpcggposteriorcingulategyrus -->
+
+
+    <Class rdf:about="rightpcggposteriorcingulategyrus">
+        <rdfs:subClassOf rdf:resource="limbic"/>
+    </Class>
+    
+
+
+    <!-- rightpcuprecuneus -->
+
+
+    <Class rdf:about="rightpcuprecuneus">
+        <rdfs:subClassOf rdf:resource="parietal"/>
+    </Class>
+    
+
+
+    <!-- rightphgparahippocampalgyrus -->
+
+
+    <Class rdf:about="rightphgparahippocampalgyrus">
+        <rdfs:subClassOf rdf:resource="limbic"/>
+    </Class>
+    
+
+
+    <!-- rightpinsposteriorinsula -->
+
+
+    <Class rdf:about="rightpinsposteriorinsula">
+        <rdfs:subClassOf rdf:resource="insula"/>
+    </Class>
+    
+
+
+    <!-- rightpogpostcentralgyrus -->
+
+
+    <Class rdf:about="rightpogpostcentralgyrus">
+        <rdfs:subClassOf rdf:resource="parietal"/>
+    </Class>
+    
+
+
+    <!-- rightpoparietaloperculum -->
+
+
+    <Class rdf:about="rightpoparietaloperculum">
+        <rdfs:subClassOf rdf:resource="frontal"/>
+    </Class>
+    
+
+
+    <!-- rightporgposteriororbitalgyrus -->
+
+
+    <Class rdf:about="rightporgposteriororbitalgyrus">
+        <rdfs:subClassOf rdf:resource="frontal"/>
+    </Class>
+    
+
+
+    <!-- rightppplanumpolare -->
+
+
+    <Class rdf:about="rightppplanumpolare">
+        <rdfs:subClassOf rdf:resource="temporal"/>
+    </Class>
+    
+
+
+    <!-- rightprgprecentralgyrus -->
+
+
+    <Class rdf:about="rightprgprecentralgyrus">
+        <rdfs:subClassOf rdf:resource="frontal"/>
+    </Class>
+    
+
+
+    <!-- rightptplanumtemporale -->
+
+
+    <Class rdf:about="rightptplanumtemporale">
+        <rdfs:subClassOf rdf:resource="temporal"/>
+    </Class>
+    
+
+
+    <!-- rightputamen -->
+
+
+    <Class rdf:about="rightputamen">
+        <rdfs:subClassOf rdf:resource="basal_ganglia"/>
+    </Class>
+    
+
+
+    <!-- rightscasubcallosalarea -->
+
+
+    <Class rdf:about="rightscasubcallosalarea">
+        <rdfs:subClassOf rdf:resource="frontal"/>
+    </Class>
+    
+
+
+    <!-- rightsfgsuperiorfrontalgyrus -->
+
+
+    <Class rdf:about="rightsfgsuperiorfrontalgyrus">
+        <rdfs:subClassOf rdf:resource="frontal"/>
+    </Class>
+    
+
+
+    <!-- rightsmcsupplementarymotorcortex -->
+
+
+    <Class rdf:about="rightsmcsupplementarymotorcortex">
+        <rdfs:subClassOf rdf:resource="frontal"/>
+    </Class>
+    
+
+
+    <!-- rightsmgsupramarginalgyrus -->
+
+
+    <Class rdf:about="rightsmgsupramarginalgyrus">
+        <rdfs:subClassOf rdf:resource="parietal"/>
+    </Class>
+    
+
+
+    <!-- rightsogsuperioroccipitalgyrus -->
+
+
+    <Class rdf:about="rightsogsuperioroccipitalgyrus">
+        <rdfs:subClassOf rdf:resource="occipital"/>
+    </Class>
+    
+
+
+    <!-- rightsplsuperiorparietallobule -->
+
+
+    <Class rdf:about="rightsplsuperiorparietallobule">
+        <rdfs:subClassOf rdf:resource="parietal"/>
+    </Class>
+    
+
+
+    <!-- rightstgsuperiortemporalgyrus -->
+
+
+    <Class rdf:about="rightstgsuperiortemporalgyrus">
+        <rdfs:subClassOf rdf:resource="temporal"/>
+    </Class>
+    
+
+
+    <!-- rightthalamusproper -->
+
+
+    <Class rdf:about="rightthalamusproper">
+        <rdfs:subClassOf rdf:resource="limbic"/>
+    </Class>
+    
+
+
+    <!-- righttmptemporalpole -->
+
+
+    <Class rdf:about="righttmptemporalpole">
+        <rdfs:subClassOf rdf:resource="temporal"/>
+    </Class>
+    
+
+
+    <!-- righttrifgtriangularpartoftheinferiorfrontalgyrus -->
+
+
+    <Class rdf:about="righttrifgtriangularpartoftheinferiorfrontalgyrus">
+        <rdfs:subClassOf rdf:resource="frontal"/>
+    </Class>
+    
+
+
+    <!-- rightttgtransversetemporalgyrus -->
+
+
+    <Class rdf:about="rightttgtransversetemporalgyrus">
+        <rdfs:subClassOf rdf:resource="temporal"/>
+    </Class>
+    
+
+
+    <!-- rightventraldc -->
+
+
+    <Class rdf:about="rightventraldc">
+        <rdfs:subClassOf rdf:resource="diencephalon"/>
+    </Class>
+    
+
+
+    <!-- root -->
+
+
+    <Class rdf:about="root">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </Class>
+    
+
+
+    <!-- rs10498633_t -->
+
+
+    <Class rdf:about="rs10498633_t">
+        <rdfs:subClassOf rdf:resource="polymorphism"/>
+    </Class>
+    
+
+
+    <!-- rs11136000_t -->
+
+
+    <Class rdf:about="rs11136000_t">
+        <rdfs:subClassOf rdf:resource="polymorphism"/>
+    </Class>
+    
+
+
+    <!-- rs11767557_c -->
+
+
+    <Class rdf:about="rs11767557_c">
+        <rdfs:subClassOf rdf:resource="polymorphism"/>
+    </Class>
+    
+
+
+    <!-- rs1476679_c -->
+
+
+    <Class rdf:about="rs1476679_c">
+        <rdfs:subClassOf rdf:resource="polymorphism"/>
+    </Class>
+    
+
+
+    <!-- rs17125944_c -->
+
+
+    <Class rdf:about="rs17125944_c">
+        <rdfs:subClassOf rdf:resource="polymorphism"/>
+    </Class>
+    
+
+
+    <!-- rs190982_g -->
+
+
+    <Class rdf:about="rs190982_g">
+        <rdfs:subClassOf rdf:resource="polymorphism"/>
+    </Class>
+    
+
+
+    <!-- rs2718058_g -->
+
+
+    <Class rdf:about="rs2718058_g">
+        <rdfs:subClassOf rdf:resource="polymorphism"/>
+    </Class>
+    
+
+
+    <!-- rs3764650_g -->
+
+
+    <Class rdf:about="rs3764650_g">
+        <rdfs:subClassOf rdf:resource="polymorphism"/>
+    </Class>
+    
+
+
+    <!-- rs3818361_t -->
+
+
+    <Class rdf:about="rs3818361_t">
+        <rdfs:subClassOf rdf:resource="polymorphism"/>
+    </Class>
+    
+
+
+    <!-- rs3851179_a -->
+
+
+    <Class rdf:about="rs3851179_a">
+        <rdfs:subClassOf rdf:resource="polymorphism"/>
+    </Class>
+    
+
+
+    <!-- rs3865444_t -->
+
+
+    <Class rdf:about="rs3865444_t">
+        <rdfs:subClassOf rdf:resource="polymorphism"/>
+    </Class>
+    
+
+
+    <!-- rs610932_a -->
+
+
+    <Class rdf:about="rs610932_a">
+        <rdfs:subClassOf rdf:resource="polymorphism"/>
+    </Class>
+    
+
+
+    <!-- rs744373_c -->
+
+
+    <Class rdf:about="rs744373_c">
+        <rdfs:subClassOf rdf:resource="polymorphism"/>
+    </Class>
+    
+
+
+    <!-- score -->
+
+
+    <Class rdf:about="score">
+        <rdfs:subClassOf rdf:resource="clinical"/>
+    </Class>
+    
+
+
+    <!-- subjectage -->
+
+
+    <Class rdf:about="subjectage">
+        <rdfs:subClassOf rdf:resource="demographics"/>
+    </Class>
+    
+
+
+    <!-- subjectageyears -->
+
+
+    <Class rdf:about="subjectageyears">
+        <rdfs:subClassOf rdf:resource="demographics"/>
+    </Class>
+    
+
+
+    <!-- temporal -->
+
+
+    <Class rdf:about="temporal">
+        <rdfs:subClassOf rdf:resource="grey_matter_volume"/>
+    </Class>
+    
+
+
+    <!-- tiv -->
+
+
+    <Class rdf:about="tiv">
+        <rdfs:subClassOf rdf:resource="lren_atlas"/>
+    </Class>
+    
+
+
+    <!-- updrs -->
+
+
+    <Class rdf:about="updrs">
+        <rdfs:subClassOf rdf:resource="score"/>
+    </Class>
+    
+
+
+    <!-- updrshy -->
+
+
+    <Class rdf:about="updrshy">
+        <rdfs:subClassOf rdf:resource="updrs"/>
+    </Class>
+    
+
+
+    <!-- updrstotal -->
+
+
+    <Class rdf:about="updrstotal">
+        <rdfs:subClassOf rdf:resource="updrs"/>
+    </Class>
+    
+
+
+    <!-- white_matter_volume -->
+
+
+    <Class rdf:about="white_matter_volume">
+        <rdfs:subClassOf rdf:resource="lren_atlas"/>
+    </Class>
+    
+
+
+    <!-- 3rdventricle -->
+
+
+    <Class rdf:about="3rdventricle">
+        <rdfs:subClassOf rdf:resource="csf"/>
+    </Class>
+    
+
+
+    <!-- 4thventricle -->
+
+
+    <Class rdf:about="4thventricle">
+        <rdfs:subClassOf rdf:resource="csf"/>
+    </Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.0.2017-03-29T23:31:42Z) https://github.com/owlcs/owlapi/ -->
+
+
